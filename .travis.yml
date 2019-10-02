@@ -3,6 +3,7 @@ dist: trusty
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
+  - tlmgr init-usertree
   - tlmgr install xcolor
 script:
 - pdflatex -interaction=nonstopmode -halt-on-error *.tex
