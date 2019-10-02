@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.10.2)  2 OCT 2019 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.10.2)  2 OCT 2019 20:34
 entering extended mode
 **./ResearchProject.tex
 (ResearchProject.tex
@@ -1124,7 +1124,7 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/home/st/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 ))
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.aux
+(ResearchProject.aux
 
 LaTeX Warning: Label `sec:analyseB' multiply defined.
 
@@ -1221,8 +1221,7 @@ LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
 LaTeX Info: Redefining \nameref on input line 49.
 
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.out)
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.out)
+(ResearchProject.out) (ResearchProject.out)
 \@outlinefile=\write4
 \openout4 = `ResearchProject.out'.
 
@@ -1252,7 +1251,7 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ResearchProject.bbl' found.
 
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.bbl
+(ResearchProject.bbl
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
@@ -1377,7 +1376,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 75
 Package tocbasic Info: character protrusion at lof deactivated on input line 89
 .
 
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.lof)
+(ResearchProject.lof)
 \tf@lof=\write6
 \openout6 = `ResearchProject.lof'.
 
@@ -1388,8 +1387,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 89
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 94
 .
-
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.lot)
+ (ResearchProject.lot)
 \tf@lot=\write7
 \openout7 = `ResearchProject.lot'.
 
@@ -1412,7 +1410,7 @@ Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              deprecated \float@listhead interface  on input line 99.
 
 
-(/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.lol)
+(ResearchProject.lol)
 \tf@lol=\write8
 \openout8 = `ResearchProject.lol'.
 
@@ -1420,8 +1418,7 @@ Class scrreprt Warning: \float@listhead detected!
 
 
 
-]
-(Assets/Glossar.tex) [4
+] (Assets/Glossar.tex) [4
 
 
 
@@ -1552,7 +1549,7 @@ chapter A.
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
- (/home/st/Schreibtisch/Studienarbeit/metadata/ResearchProject.aux)
+ (ResearchProject.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `ResearchProject.out' has not changed.
@@ -1570,13 +1567,13 @@ Package logreq Info: Writing requests to 'ResearchProject.run.xml'.
 ### semi simple group (level 1) entered at line 26 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31055 strings out of 494857
- 541063 string characters out of 3178412
- 1191603 words of memory out of 3000000
- 33418 multiletter control sequences out of 15000+200000
+ 31054 strings out of 494857
+ 540615 string characters out of 3178412
+ 1191564 words of memory out of 3000000
+ 33417 multiletter control sequences out of 15000+200000
  61545 words of font info for 123 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
- 48i,11n,66p,9096b,18561s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,11n,66p,9096b,18560s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/st/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</
 home/st/.miktex/texmfs/install/fonts/type1/urw/courier/ucrb8a.pfb></home/st/.mi
 ktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/st/.miktex/texmfs
@@ -1584,7 +1581,7 @@ ktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/st/.miktex/texmfs
 onts/type1/urw/palatino/uplb8a.pfb></home/st/.miktex/texmfs/install/fonts/type1
 /urw/palatino/uplr8a.pfb></home/st/.miktex/texmfs/install/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on ResearchProject.pdf (19 pages, 156976 bytes).
+Output written on ResearchProject.pdf (19 pages, 156964 bytes).
 PDF statistics:
  269 PDF objects out of 1000 (max. 8388607)
  55 named destinations out of 1000 (max. 500000)

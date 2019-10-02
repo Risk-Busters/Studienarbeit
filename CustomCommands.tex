@@ -28,7 +28,6 @@
 {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
 \makeatother
 
-\definecolor{quotemark}{gray}{0.3}
 \makeatletter
 \def\fquote{%
 	\@ifnextchar[{\fquote@i}{\fquote@i[]}%]
@@ -51,7 +50,7 @@
 		}%
 		\item[]%
 		\begin{picture}(0,0)%
-		\put(-15,-5){\makebox(0,0){\scalebox{3}{\textcolor{quotemark}{``}}}}%
+		\put(-15,-5){\makebox(0,0){\scalebox{3}{\textcolor{gray}{``}}}}%
 		\end{picture}%
 		\begingroup\itshape}%
 	%%%%********************************************************************
@@ -61,7 +60,7 @@
 			\hspace{0.8\textwidth}%
 			\begin{picture}(0,0)(0,0)%
 			\put(15,15){\makebox(0,0){%
-					\scalebox{3}{\color{quotemark}''}}}%
+					\scalebox{3}{\color{gray}''}}}%
 			\end{picture}}%
 		\ifx\tempb\empty%
 		\hfill\rule{100pt}{0.5pt}\\%
