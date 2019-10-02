@@ -1,10 +1,9 @@
 sudo: required
-dist: trusty
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra latex-xcolor
 script:
-  - pdflatex -interaction=nonstopmode -halt-on-error *.tex
+  - pdflatex -interaction=nonstopmode -halt-on-error ResearchProject.tex
 notifications:
   webhooks:
     secure: F5J9M+6JFi4/LfFZb9A62i4K5jNEEVv1Q1hfRKqNM4NvD3f2i4sZRPIQyospWAlPzeRZcL/XaRypXzh9TxmiMpMYyjTFWFlpkzkcok5dplIHfm375curvCfVAZ4Dr2vm97l7pfoW/VuSHoI+bQifqdt0aH1NE8rhpjJdGKgERaxvTINiXBUipDPUfUyH1Q3hRWqID5OfpGJMR/wGAc7nA45EJeSO8yVDNLn7Mn8lPOVRQE5iM0wIWY2Grj6UDkYv6Psg7/DqRZMsGzt9rEa282gx4EEyGfRtjOkyQ9sttz1PpSSQrVlwBNvR4EZkHwNZvBbBUB4Umh6wf6O9xXabXjI2K4KrwDXmPXR1O2l9MuAs8ifwt4RcW1ZO63GOYaO5uoeHHT5Dcx7PYz5Dcxe1YUgMvC7K4BCdNyimHHEfa+PK6eIQvrwd76axklqqWiJWP5J63GmMBBS/LBaNQT8XixIIb3qslzc3uCawd035v4cL/T1a9xzh+cdpK7BQlXip0Kajtx5VwxwHB9lFYOsBILSCHCoV0qSV8SoWNB1ktODjzczee+tqtmF5L5HrQUWMFY+cRm33YiZSRTD7pYZVYBvNZRE2kAN4jHIcBZleb0De/K/dADthN3OI4djU+ZM0/szVX+yvyfjNHl/1gPV8xaHniyDxt2iW7agsKAYb1aY=
