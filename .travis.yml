@@ -1,17 +1,6 @@
-sudo:       required
-language:   generic
-services:   docker
-
-# Docs of the options: https://github.com/Strauman/travis-latexbuild/tree/master#configuration-options
-tex-config:
-- tex-scheme=small
-- push-type=none
-- build-pattern=ResearchProject.tex,ResearchProject.tex
-#- latexmk-flags=-dvi -f
-# Check at https://www.ctan.org/pkg/package-name in which TeX Live package a LaTeX package is contained.
-- packages= acronym, amsfonts, amsmath, arabi, babel, base, basiclayer, biblatex, bigfoot, booktabs, caption, changepage, colortbl, compatibility, csquotes, doc, dvips, eso-pic, etoc, etoolbox, fancyhdr, float, framed, frontendlayer, geometry, geometry-de, graphics, hyperref, ifxetex, koma-script, listings, logreq, math, microtype, ms, multirow, oberdiek, pdfpages, placeins, preprint, psnfss, setspace, subfig, systemlayer, tools, Tutorium13, url, utilities, vorlagen, wrapfig, xcolor, xstring
-
-
-# We will use the docker image from https://hub.docker.com/r/phpirates/texlive-latexbuild/
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 script:
-- docker run --mount src=$TRAVIS_BUILD_DIR/,target=/repo,type=bind phpirates/texlive-latexbuild:small-2018
+- pdflatex -interaction=nonstopmode -halt-on-error *.tex
