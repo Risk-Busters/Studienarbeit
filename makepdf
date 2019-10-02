@@ -1,0 +1,4 @@
+pdflatex ResearchProject
+biber ResearchProject
+pdflatex ResearchProject
+

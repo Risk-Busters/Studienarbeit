@@ -1,0 +1,211 @@
+
+%%%------------------------------------%%%
+%%% Document
+%%%------------------------------------%%%
+\documentclass[ngerman, a4paper, 11pt, pdftex]{scrreprt}
+
+%%%------------------------------------%%%
+%%% Settings
+%%%------------------------------------%%%
+\input{SettingsDefinitions.tex}
+\input{Settings.tex}
+
+%%%------------------------------------%%%
+%%% Headings
+%%%------------------------------------%%%
+\input{Headings.tex}
+\setcounter{secnumdepth}{4}
+
+%%%------------------------------------%%%
+%%% Meta-Data
+%%%------------------------------------%%%
+\AtBeginDocument{
+	\hypersetup{
+		pdftitle=\pdftitle, % Set the PDF's title
+		pdfauthor=\pdfauthor, % Set the PDF's author
+		pdfkeywords={\pdftags},	% Set the PDF's keywords
+		pdfsubject={\pdftitle},
+		pdfcreator={pdflatex, LaTeX with KOMA-Script},
+		pdfpagemode=UseOutlines,
+		pdfdisplaydoctitle=true,
+	}
+}
+%%%--------------------------------%%%
+%%% Additional packages
+%%%--------------------------------%%%
+\usepackage{wrapfig}
+
+%%%--------------------------------%%%
+%%% Custom commands
+%%%--------------------------------%%%
+\input{CustomCommands.tex}
+
+%%%------------------------------------%%%
+%%%------------------------------------%%%
+\newcounter{savepage} 	% Counter for Acronyms, Glossary, List of Figures,
+						% Tables, Listings, Equations and Appendix
+
+\begin{document}	
+	%%%---Cover
+	%%%--------------------------------%%%
+	\input{Assets/Cover.tex}
+	
+	%%%---Abstract
+	%%%--------------------------------%%%
+	\renewcommand*{\chapterpagestyle}{empty}
+	
+	\input{Assets/Abstract.tex}	
+	
+	%%%---Thanks
+	%%%--------------------------------%%%
+	%\input{Assets/Thanks.tex}
+	
+	%%%---Notice
+	%%%--------------------------------%%%
+	\input{Assets/Notice.tex}
+	
+	%%%--------------------------------%%%
+	%%% Table of Content
+	%%%--------------------------------%%%
+	\cleardoublepage
+	\etocdepthtag.toc{mtchapter}
+	\etocsettagdepth{mtchapter}{subsection}
+	\etocsettagdepth{mtappendix}{none}
+	\tableofcontents\thispagestyle{empty}
+	
+	%%%---------------------------------------------------%%%
+	%%% List of Figures, Tables, Listings, Equations, ...
+	%%%---------------------------------------------------%%%
+	\cleardoublepage
+	\renewcommand*{\chapterpagestyle}{simple} 	% Page style 'simple'
+	\pagestyle{simple}							% is defined in the 
+	% Headings.tex
+	\pagenumbering{Roman} 	% Continue with roman numbering
+	\setcounter{page}{1} 	% Continue with roman page counter
+	
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\nameoflistoffigures}
+	\listoffigures		% List of Figures
+	
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\nameoflistoftables}
+	\listoftables		% List of Tables
+	
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\nameoflistoflistings}
+	\lstlistoflistings	% List of Listings
+	
+	%\cleardoublepage
+	%\phantomsection
+	%\addcontentsline{toc}{chapter}{\nameoflistofequations}
+	%\listofequations	% List of Equations
+
+	%%%--------------------------------%%%
+	%%% Acronyms
+	%%%--------------------------------%%%
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\nameoflistofacronyms}
+	%\input{Assets/Acronyms.tex}
+	
+	%%%--------------------------------%%%
+	%%% Glossary
+	%%%--------------------------------%%%
+	\input{Assets/Glossar}
+	\addcontentsline{toc}{chapter}{\nameofglossary}
+	
+	%%%--------------------------------%%%
+	%%% Design Guidelines
+	%%%--------------------------------%%%
+	%\input{Assets/Design}
+	%\addcontentsline{toc}{chapter}{Gestaltungsrichtlinien}
+	
+	%%%--------------------------------%%%
+	%%% Content
+	%%%--------------------------------%%%
+	\clearpage
+	\pagestyle{nice} % Defined in Headings.tex
+	\renewcommand*{\chapterpagestyle}{simple}
+	
+	\setcounter{savepage}{\arabic{page}} % Save current roman page numer
+	
+	\pagenumbering{arabic} 	% Continue with arabic numbering
+	\setcounter{page}{1} 	% Set content page numbering to 1
+	
+	%%%--------------------------------%%%
+	%%% Chapters
+	%%%--------------------------------%%%
+	\input{Content/Introduction.tex}
+	
+	\input{Content/Structure.tex}
+	
+	\input{Content/Theory/Theory.tex}
+	
+	\input{Content/Analysis/Analysis.tex}
+	
+	%\input{Content/Requirements.tex}
+	
+	\input{Content/Implementation/Implementation.tex}
+	
+	\input{Content/Discussion/Discussion.tex}	
+	
+	\input{Content/ConclusionOutlook/ConclusionOutlook.tex}
+	
+	%%%--------------------------------%%%	
+	%%% Bibliography
+	%%%--------------------------------%%%	
+	\cleardoublepage
+	
+	\printbibliography[heading=bibintoc, title={\nameofreferences}]
+	
+%	\printbibliography[keyword=extern, heading=bibintoc, title={\nameofreferences}]
+%	\printbibliography[keyword=intern, title={\nameofreferencesinternal}]
+	
+%	\printbibliography[
+%		keyword=extern, 
+%		heading=bibintoc, 
+%		title={\nameofreferences}
+%	]
+%	\printbibliography[
+%		keyword=intern, 
+%		title={\nameofreferencesinternal}
+%	]
+
+	
+	%%%--------------------------------%%%
+	%%% Appendix
+	%%%--------------------------------%%%
+	\cleardoublepage
+	\pagenumbering{Roman} 			% Continue with roman numbering
+	\setcounter{page}{\thesavepage} % Continue with roman page counter
+	
+	\phantomsection
+	\label{ch:appendix}
+	\addcontentsline{toc}{chapter}{\nameofappendix}
+	
+	% Table of appendix	
+	\etocdepthtag.toc{mtappendix}
+	\etocsettagdepth{mtchapter}{none}
+	\etocsettagdepth{mtappendix}{subsection}
+	\etoctocstyle{0}{\nameofappendix}
+	\tableofcontents
+	
+	% Appendix content
+	\clearpage
+	\appendix
+	
+	\foreach \i in {01,02,03,04,05,06,07,08,09,...,99} {%
+		\edef\FileName{Appendix/\i_appendix}%
+		\IfFileExists{\FileName}{%
+			\input{\FileName}
+		}
+		{%
+			% File does not exist
+		}
+	}%foreach	
+
+\end{document}
+
+

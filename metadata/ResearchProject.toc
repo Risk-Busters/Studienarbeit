@@ -1,0 +1,57 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\etoc@depthtag {mtchapter}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of figures}{I}{section*.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of tables}{II}{section*.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of listings}{III}{section*.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of abbreviations}{IV}{section*.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossary}{IV}{chapter*.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Theoretical background}{3}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Risk Management}{3}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Unterkapitel}{3}{subsection.2.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Gamification}{3}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Unterkapitel}{3}{subsection.2.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}PWA}{3}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Unterkapitel}{3}{subsection.2.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Software Specifications}{4}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Technologies}{4}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Requirements}{4}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Architecture}{4}{section.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Implementation}{5}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Unterkapitel -> Design, Evaluation, Methodisches, PM, ...}{5}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Unterkapitel2}{5}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion}{6}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{7}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of references}{8}{chapter*.15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendix}{V}{section*.16}% 
+\defcounter {refsection}{0}\relax 
+\etoc@depthtag {mtappendix}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Anhang1}{VI}{appendix.A}% 
