@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Risk-Busters/Studienarbeit.svg?branch=master)](https://travis-ci.com/Risk-Busters/Studienarbeit)
+
 # Studienarbeit
 
 ## Compilation
