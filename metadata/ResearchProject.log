@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.10.2)  2 OCT 2019 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.10.2)  4 OCT 2019 21:09
 entering extended mode
 **./ResearchProject.tex
 (ResearchProject.tex
@@ -1124,7 +1124,7 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/home/st/.miktex/texmfs/install/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 ))
-(ResearchProject.aux
+(/home/st/Studienarbeit/metadata/ResearchProject.aux
 
 LaTeX Warning: Label `sec:analyseB' multiply defined.
 
@@ -1221,7 +1221,8 @@ LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
 LaTeX Info: Redefining \nameref on input line 49.
 
-(ResearchProject.out) (ResearchProject.out)
+(/home/st/Studienarbeit/metadata/ResearchProject.out)
+(/home/st/Studienarbeit/metadata/ResearchProject.out)
 \@outlinefile=\write4
 \openout4 = `ResearchProject.out'.
 
@@ -1251,18 +1252,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ResearchProject.bbl' found.
 
-(ResearchProject.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                bibkey
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(/home/st/Studienarbeit/metadata/ResearchProject.bbl)
 Package biblatex Info: Reference section=0 on input line 49.
 Package biblatex Info: Reference segment=0 on input line 49.
- (/home/st/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+
+(/home/st/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count373
 \scratchdimen=\dimen193
@@ -1376,7 +1370,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 75
 Package tocbasic Info: character protrusion at lof deactivated on input line 89
 .
 
-(ResearchProject.lof)
+(/home/st/Studienarbeit/metadata/ResearchProject.lof)
 \tf@lof=\write6
 \openout6 = `ResearchProject.lof'.
 
@@ -1387,7 +1381,8 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 89
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 94
 .
- (ResearchProject.lot)
+
+(/home/st/Studienarbeit/metadata/ResearchProject.lot)
 \tf@lot=\write7
 \openout7 = `ResearchProject.lot'.
 
@@ -1410,7 +1405,7 @@ Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              deprecated \float@listhead interface  on input line 99.
 
 
-(ResearchProject.lol)
+(/home/st/Studienarbeit/metadata/ResearchProject.lol)
 \tf@lol=\write8
 \openout8 = `ResearchProject.lol'.
 
@@ -1418,7 +1413,8 @@ Class scrreprt Warning: \float@listhead detected!
 
 
 
-] (Assets/Glossar.tex) [4
+] (Assets/Glossar.tex)
+[4
 
 
 
@@ -1439,16 +1435,35 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
+
+LaTeX Warning: Citation 'bibkey' on page 1 undefined on input line 10.
+
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 10.
+
+LaTeX Warning: Citation 'freiknechtBigDataPraxis2018' on page 1 undefined on in
+put line 11.
+
+
+Overfull \hbox (0.48706pt too wide) in paragraph at lines 9--12
+[]\T1/ppl/m/n/10.95 (-20) Latex Cheat Sheet: Bildquelle mit Seite: [[]] Quelle 
+normal: [[]] 
+ []
+
 File: logos/dhbwLogo.png Graphic file (type png)
 <use logos/dhbwLogo.png>
 Package pdftex.def Info: logos/dhbwLogo.png  used on input line 16.
 (pdftex.def)             Requested size: 452.9679pt x 218.97263pt.
+
+LaTeX Warning: Citation 'bibkey' on page 1 undefined on input line 18.
+
 File: logos/dhbwLogo.png Graphic file (type png)
 <use logos/dhbwLogo.png>
 Package pdftex.def Info: logos/dhbwLogo.png  used on input line 25.
 (pdftex.def)             Requested size: 452.9679pt x 218.97263pt.
+
+LaTeX Warning: Citation 'bibkey' on page 1 undefined on input line 27.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1532,12 +1547,12 @@ chapter 6.
 ) [7
 
 ]
-chapter without number
-[8
+
+LaTeX Warning: Empty bibliography on input line 162.
+
+[5
 
 
-
-] [5
 
 
 
@@ -1549,14 +1564,22 @@ chapter A.
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
- (ResearchProject.aux)
+ (/home/st/Studienarbeit/metadata/ResearchProject.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `ResearchProject.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                ResearchProject
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'ResearchProject.run.xml'.
 \openout1 = `ResearchProject.run.xml'.
@@ -1567,11 +1590,11 @@ Package logreq Info: Writing requests to 'ResearchProject.run.xml'.
 ### semi simple group (level 1) entered at line 26 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31054 strings out of 494857
- 540615 string characters out of 3178412
- 1191564 words of memory out of 3000000
- 33417 multiletter control sequences out of 15000+200000
- 61545 words of font info for 123 fonts, out of 3000000 for 9000
+ 31029 strings out of 494857
+ 539753 string characters out of 3178412
+ 1191537 words of memory out of 3000000
+ 33396 multiletter control sequences out of 15000+200000
+ 61469 words of font info for 122 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
  48i,11n,66p,9096b,18560s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/st/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</
@@ -1581,9 +1604,9 @@ ktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/st/.miktex/texmfs
 onts/type1/urw/palatino/uplb8a.pfb></home/st/.miktex/texmfs/install/fonts/type1
 /urw/palatino/uplr8a.pfb></home/st/.miktex/texmfs/install/fonts/type1/urw/palat
 ino/uplri8a.pfb>
-Output written on ResearchProject.pdf (19 pages, 156964 bytes).
+Output written on ResearchProject.pdf (18 pages, 150563 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 43219 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 43211 words of extra memory for PDF output out of 51595 (max. 10000000)
 
