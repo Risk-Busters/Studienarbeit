@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[0] Config.pm:307> INFO - Logfile is 'metadata\03_theory.blg'
+[33] biber-MSWIN64:315> INFO - === 
+[400] Utils.pm:316> ERROR - Cannot find '03_theory.bcf'!
+[401] Biber.pm:114> INFO - ERRORS: 1
