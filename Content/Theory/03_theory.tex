@@ -5,7 +5,7 @@
 \label{sec:theorieC}
 
 
-As of today, devices such as mobile phones and personal computers come with their own app store. Microsoft offers their own Store, Google its Play Store and Apple the App Store. As a user you often find yourself worrying about an app you once saw running on another platform not being available for your platform too (e.g. Apples iOS and Googles Android). \cite[p. 3]{sheppardBeginningProgressiveWeb2017} Not to mention app developers who are in a hurry to make their apps available for all known platforms.
+As of today, devices such as mobile phones and personal computers come with their own app store. Microsoft offers their own Store, Google its Play Store and Apple the App Store. As a user you often find yourself worrying about an app you once saw running on another platform not being available for your platform too (e.g. Apples iOS and Googles Android). \cite[p. 3]{sheppardBeginningProgressiveWeb2017}
 
 Progressive Web Apps (PWAs) approach these concerns by trying to move away from app stores onto a platform which is available on most devices – the web browser. This means that PWAs are regular web apps at their core but can progressively leave the web browser. For example, PWAs can be installed on the underlaying operating system and be accessed from the app switcher or the taskbar and be executed in full screen mode without the browsers interface being visible. \cite[p. 26]{liebelProgressiveWebApps2019} Further characteristics of PWAs and how exactly a PWA can leave the web browser are granularly described in the following chapter.
 
@@ -15,7 +15,7 @@ Progressive Web Apps (PWAs) approach these concerns by trying to move away from 
 
 
 To transform an existing Web App into a PWA or build one from scratch one must implement different criteria’s instead of including a new framework or library. \cite[p. 6]{sheppardBeginningProgressiveWeb2017}
-The following eight characteristics represent Mozilla’s (Firefox) ideas of a PWA. Other web browser manufactures such as Microsoft (Edge) or Google (Chrome) for example describe eight or ten respectively within their developer documentations. \cite[p. 90]{liebelProgressiveWebApps2019}\cite{ProgressiveWebApps}
+While the following eight characteristics represent Mozilla’s (Firefox) ideas of a PWA, other web browser manufactures such as Microsoft (Edge) or Google (Chrome) have roughly the same idea about PWAs and describe eight or ten characteristics respectively within their developer documentations. \cite[p. 90]{liebelProgressiveWebApps2019}\cite{ProgressiveWebApps}
 
 \begin{enumerate} 
 	\item  \textbf{Progressive}: The first characteristic defines that a PWA should not exclude the user from using the core functionality but extend the user experience by embracing new features implemented by the web browser manufactures. \cite[p. 100]{liebelProgressiveWebApps2019}\cite[p. 2]{hajianProgressiveWebApps2019}. For example, a web app to check mails should not exclude the user from checking their inbox or sending mails but could provide push notifications to inform about incoming mails. In this example the user is not excluded from using the core functionality of a mail app (checking the inbox and sending mails) and user experience is enhanced by push notifications. To avoid unexpected failures a developer should follow the \textit{Feature Detection} principle which says an application should not blindly use a non-standardized feature before checking its existence. \cite[p. 101]{liebelProgressiveWebApps2019}
@@ -42,7 +42,7 @@ The following eight characteristics represent Mozilla’s (Firefox) ideas of a P
 	\label{fig:pwa_responsive}
 \end{figure}
 
-	\item \textbf{Discoverable}: As PWAs are not a new framework or library but regular web apps at their core, there needs to be method to distinguish between a PWA and a regular web app. This is necessary for web browsers to provide additional features to PWAs such as an option to install (see next paragraph). To make a PWA discoverable a “Web Manifest” file (see chapter \ref{sec:theorieCb}, p. \pageref{sec:theorieCb}), which contains information like the name of the PWA, needs to be provided. \cite[p. 118]{liebelProgressiveWebApps2019}
+	\item \textbf{Discoverable}: As PWAs are not a new framework or library but regular web apps at their core, there needs to be a method to distinguish between a PWA and a regular web app. This is necessary for web browsers to provide additional features to PWAs such as an option to install (see next paragraph). To make a PWA discoverable a “Web Manifest” file (see chapter \ref{sec:theorieCb}, p. \pageref{sec:theorieCb}), which contains information like the name of the PWA, needs to be provided. \cite[p. 118]{liebelProgressiveWebApps2019}
 
 	\item \textbf{Installable}: To take things even further, besides offline functionality, a PWA should be installable to the user’s device. In detail, a user should be able to install the PWA from within the web browser to the underlaying operating system like Android or iOS. From this point on the user can launch the PWA directly from the devices home screen like it is shown in chapter \ref{sec:theorieCb} (p. \pageref{sec:theorieCb}). Different browser manufactures expect different requirements to be fulfilled before they provide an option to install. Mozilla’s Firefox for example expect that the PWA is network independent, safe and discoverable. \cite{HowMakePWAs}
 
@@ -80,9 +80,9 @@ Figure \ref{fig:pwa_webmanifest} shows the effects of this web manifest on an ex
 \subsection{Service Worker}
 \label{sec:theorieCc}
 
-A service workers, a in JavaScript written script which runs in the context of the web browser, primary purpose, as mentioned in chapter \ref{sec:theorieCa}(p. \pageref{sec:theorieCa}), is to cache content and provide it to the PWA whenever a slow or no connection to the Internet exists. Background syncing as well as sending push notifications can also be realized with a service worker. To achieve this, a service worker has three specific traits: being \textit{controller}, \textit{interceptor} and a \textit{proxy}. 
+A service worker is a script written in JavaScript, running in the context of the web browser. Its primary purpose, as mentioned in chapter \ref{sec:theorieCa} (p. \pageref{sec:theorieCa}), is to cache content and provide it to the PWA whenever a slow or no connection to the Internet exists. Background syncing as well as sending push notifications can also be realized with a service worker. To achieve this, a service worker has three specific traits: being \textit{controller}, \textit{interceptor} and a \textit{proxy}. \cite[p. TODO(Buch Zuhause durchsuchen wo es war]{liebelProgressiveWebApps2019}
 
-After being registered by the web browser, which means that a HTTPS connection is established and it is request by the PWAs source code, it has full control to all in- and outgoing network traffic, hence the trait of a controller. Interceptor means that the service worker can manipulate and inspect the network traffic and proxy as the service worker is able to decide if the outgoing traffic should be redirected to the requested resource or completely avoid any outgoing traffic by answering with data it stored in a cache previously. The latter is the exact reason why a service worker is indispensable for the Network Independent characteristic (chapter \ref{sec:theorieCb}, p. \pageref{sec:theorieCb}) of a PWA.
+After being registered by the web browser, which means that a HTTPS connection is established and it is request by the PWAs source code, it has full control to all in- and outgoing network traffic, hence the trait of a controller. Interceptor means that the service worker can manipulate and inspect the network traffic and proxy as the service worker is able to decide if the outgoing traffic should be redirected to the requested resource or completely avoid any outgoing traffic by answering with data it stored in a cache previously. The latter is the exact reason why a service worker is indispensable for the Network Independent characteristic (chapter \ref{sec:theorieCb}, p. \pageref{sec:theorieCb}) of a PWA. \cite[p. TODO(Buch Zuhause durchsuchen wo es war)]{liebelProgressiveWebApps2019}
 
 The upcoming listing demonstrate how a service worker can manipulate and proxy outgoing network traffic. Before, lets assume that a cache called \texttt{pwa-demo} was already created by the service worker.
 
@@ -119,7 +119,7 @@ In figure \ref{pwa_comptaibility_webmanifest} one can see the web browser compat
 
 The web manifest is currently not widely supported on the desktop versions of many browsers. Currently only Googles Chrome fully supports it, in return though, most major, except Opera Mini, mobile browsers at least partly support the web manifest. 
 
-Figure \ref{fig:pwa_comptaibility_serviceworker} shows the web browsers support for the service worker which primary goal is the offline functionality. Regardless of desktop or mobile platform, it is currently supported by every major web browser except the Internet Explorer and Opera Mini.
+Figure \ref{pwa_comptaibility_serviceworker} shows the web browsers support for the service worker which primary goal is the offline functionality. Regardless of desktop or mobile platform, it is currently supported by every major web browser except the Internet Explorer and Opera Mini.
 
 \begin{figure}[htbp] 
 	\centering
