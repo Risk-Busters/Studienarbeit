@@ -5,7 +5,8 @@
 \section{Gamification}
 \label{sec:theoryB}
 
-The following chapters aim is to clarify the main theory behind human motivation, gamification and the corresponding patterns and methods. Therefore first of all the term Gamification is defined and explained (chapter \ref{sec:theoryBa}), furthermore there is an introduction to human motivation (chapter \ref{sec:theoryBb}) and motivational patterns (chapter \ref{sec:theoryBc}). TODO REST
+The following chapters aim is to clarify the main theory behind human motivation, gamification and the corresponding patterns and methods. Therefore first of all the term Gamification is defined and explained (chapter \ref{sec:theoryBa}), furthermore there is an introduction to human motivation (chapter \ref{sec:theoryBb}) and motivational patterns (chapter \ref{sec:theoryBc}). Moreover gamification best practices and the gamification process are introduced (chapter \ref{sec:theoryBd}). Finally chances and risks of gamified business applications are discussed (chapter \ref{sec:theoryBe}).
+
 
 \subsection{Definition Gamification}
 \label{sec:theoryBa}
@@ -19,6 +20,7 @@ The term gamification is defined by Kumar and Herger as follows:
 \end{fquote}
 
 Based on the above definition gamification aims to motivate the user to do something. That's why the next chapter provides a more comprehensive introduction on motivation. \cite[p. 8]{inproceedings}
+
 
 \subsection{Motivation}
 \label{sec:theoryBb}
@@ -80,8 +82,9 @@ Referring to the relationship between behavioral economics and application desig
 
 Patterns which motivate the user to do something by using the theoretical background of motivation, behavioral psychology and behavioral economics are described in the following chapter \ref{sec:theoryBc}
 
-====================\newline
-Psychologie (was motiviert allgemein) -> übertragen auf die Mensch-Maschine-Interaktion = Human Computer Interaction (Wie agiert der Mensch mit dem Computer/der Maschine)
+%====================\newline
+%Psychologie (was motiviert allgemein) -> übertragen auf die Mensch-Maschine-Interaktion = Human Computer Interaction (Wie agiert der Mensch mit dem Computer/der Maschine)
+
 
 \subsection{Motivational Patterns}
 \label{sec:theoryBc}
@@ -89,6 +92,7 @@ Psychologie (was motiviert allgemein) -> übertragen auf die Mensch-Maschine-Int
 The theoretical concepts above are used in various motivational patterns. In Lewis \cite{lewisIrresistibleAppsMotivational2014} and Kumar and Herger \cite{inproceedings} lots of motivational patterns are described. In the following some patterns which may be relevant for the conception of the risk management application are introduced. For a more comprehensive entry into motivational design patterns please refer to \cite{lewisIrresistibleAppsMotivational2014} and \cite{inproceedings}.
 
 \paragraph*{Gameful Patterns}
+\label{GamefulPatterns}
 \begin{itemize}
 	\item Collection: Collecting and owning virtual items (e.g. Forza Horizon, Pokémon). \cite[p. 4, 35]{lewisIrresistibleAppsMotivational2014}
 	\item Specialization—Badge: The user has reached a goal which is now visible through a badge (e.g. Xbox 360). \cite[p. 4, 37]{lewisIrresistibleAppsMotivational2014}
@@ -96,8 +100,9 @@ The theoretical concepts above are used in various motivational patterns. In Lew
 	\item Increased Responsibility: Trust in a user is the underlying basis for getting responsible tasks (e.g. Stack Overflow). \cite[p. 4, 41]{lewisIrresistibleAppsMotivational2014}
 	\item Leaderboard: Ranking users based on specific metrics (e.g. Doodle Jump). \cite[p. 4, 44]{lewisIrresistibleAppsMotivational2014}
 	\item Score: Based on the reward principle. By performing desired behavior the user normally achieves points, presenting her/his achievement level (e.g. Pac-Man) \cite[p. 4, 46]{lewisIrresistibleAppsMotivational2014}
-	
-	TODO: unten aufgeführte konkrete Gamification Patterns (Challenge,...) hier ergänzen
+	\item Challenge: Challenges motivate users by giving them the feeling of reaching something great (e.g. TODO: Duolingo Strikes) \cite[p. 77, 78]{inproceedings}
+	\item Constraints with urgent optimism: Urgent Optimism combined with deadlines leads to a motivational effect.
+	\item Journey (Onboarding, Scaffolding, Progress): Journey describes the adaptability of the application based on different usage phases. One can think about a specific onboarding process providing an introduction and help regarding the application. The next phase after onboarding is scaffolding. The user is still inexperienced leading to a risk of operating errors. By providing support and constant feedback the bounce rate is minimized. Finally the user is onboarded and knows the main concepts of the application and is able to use them. Nevertheless the constant user engagement is still desirable. It can be implemented with elements clearly showing users their current progress and feedback loops. (e.g. Setup process for LinkedIn) \cite[p. 80, 81, 82]{inproceedings}
 \end{itemize}
 
 \paragraph*{Social Patterns}
@@ -126,63 +131,10 @@ The theoretical concepts above are used in various motivational patterns. In Lew
 	\item Task Queue: Presents tasks which can be done next by a user trying to keep the user using the application (e.g. Setup process for LinkedIn) \cite[p. 6, 93]{lewisIrresistibleAppsMotivational2014}
 \end{itemize}
 
-
 	
 TODO einordnen: Flow, Interesse \newline
 TODO: Beschreibung \cite[p. 19, 20, 21]{bierhoffeditorEnzyklopaediePsychologieSoziale2016}
 
-Gameful Patterns:
-d-Collection => maybe yes
-d-Specialization—Badge => yes
-d-Growth => no
-d-Increased Responsibility => yes
-d-Leaderboard => yes (in case of anonymous regarding privacy)
-d-Score (=Points) => maybe (critical discussion, over fitting, ...)
-
-Social Patterns:
-d-Activity Stream => yes
-d-Broadcast => yes (maybe one can argument its implicit by posting a risk)
-d-Specialization—Social Feedback => yes (one can like posted risks)
-n-Contact List => no
-n-Identifiable Community => no
-n-Specialization—Meta-Area => no
-n-Identity Shaping => no
-n-Item Sharing => no
-
-Interface Patterns:
-d-Notifications => yes
-d-Praise => yes
-d-Predictable Results => yes
-d-State Preservation => yes
-d-Undo => maybe
-
-Information Patterns:
-n-Customization => no 
-n-Specialization—Filters => no
-n-Intriguing Branch => no
-d-Organization of Information => yes 
-d-Personalization => yes (maybe)
-d-Reporting => yes somehow in Risk Review process
-d-Search => yes
-d-Task Queue => yes!!!
-
-Temporal Dark Patterns:
-n-Grind => no
-n-Hellbroadcast => no
-n-Interaction by Demand => no
-
-Monetary Dark Patterns:
-n-Currency Confusion => no
-n-Monetized Rivalries => no
-n-Pay to Skip => no
-
-Social Capital Dark Patterns:
-n-Impersonation => maybe no
-n-Social Pyramid Schemes =>no
-
-====================\newline
-TODO: Liste der im folgenden vorgestellten Motivational Patterns und Erklärung warum diese ausgewählt wurden
-Für eine weiterfühtrende Beschreibung weiterer sei auf ... verwiesen
 
 \subsection{Gamification best practices and process}
 \label{sec:theoryBd}
@@ -220,31 +172,25 @@ Based on \cite[p. 29-32]{inproceedings} it consists of five steps:
 
 	\item Human Motivation \newline
 	Thirdly a basic knowledge about the theory behind human motivation is needed and is therefore described in chapter \ref{sec:theoryBb}.
+	
 	\item Game Mechanics \newline
+	Game mechanics represent the area of adding concrete gameful patterns to a non game environment. As part of motivational patterns gameful patterns are described in chapter \ref{GamefulPatterns}. While implementing gameful patterns in non game environments one should take into account that adding all patterns to an application normally doesn't reach the resumed aim. Hence the selection of fitting patterns must be adapted to the prescribed context. The main aim behind adding gameful patterns is to build a positive engagement loop centering the user/player. Figure \ref{fig:engagementLoop} shows the four main steps of the engagement loop, starting with a motivating emotion.  \cite[p. 69-71]{inproceedings}
 	
-	Points yes (maybe) -> already above
-	Badges yes (maybe) -> already above
-	Leaderboards (s.o.) -> already above
-	Relationships (s.o. social patterns) -> already above
-	Challenge => yes (maybe)
-	Constraints with urgent optimism => yes
-	Journey	(Onboarding, Scaffolding, Progress) => yes
-	Narrative => no
-	Emotion => no
+	\begin{figure}[htbp] 
+		\centering
+		\includegraphics[width=1.0\textwidth]{Content/Theory/EngagementLoop.png}
+		\caption{Engagement Loop}
+		\cite[p. 88]{inproceedings}
+		\label{fig:engagementLoop}
+	\end{figure}
 	
-	TODO
 	\item Manage, Monitor and Measure \newline
-	After applying specific game mechanics to an application there are few points left,which should be observed in production. On the one hand mission should be managed. Based on the S.M.A.R.T. Mission process the identified mission should be checked frequently and if needed adapted. On the other hand the user/player behavior should be monitored and measured. TODO: weiter Evaluation beschreiben
-	\cite[p. 92-96]{inproceedings}
+	After applying specific game mechanics to an application there are few points left, which should be observed in production. On the one hand the mission should be managed. Based on the S.M.A.R.T. Mission process the identified mission should be checked frequently and if needed adapted. On the other hand the user/player behavior should be monitored and measured to evaluate the effectiveeness of the implemented patterns. This can be done qualitative by surveys and interviews and quantitative by tracking and data evaluation. Based on the acquired knowledge the application can be enhanced in the future.	\cite[p. 92-96]{inproceedings}
 \end{enumerate}
 
 
-\subsection{Gamification and motivational methods and patterns in business software TODO}
+\subsection{Chances and risks of Gamification}
 \label{sec:theoryBe}
-(u.a. behavioral economics)
-
-\subsection{Risks of Gamification}
-\label{sec:theoryBf}
 Risks of Gamification (u.a. Korrumpierungseffekt, "Overfitting???", Source: Does Gamification Work? — A Literature Review of Empirical Studies on
 Gamification)
 
