@@ -127,7 +127,7 @@ tbd: Insert screenshots and shortly explain what can be seen
 \end{figure}
 
 \paragraph*{Basic Flow} \mbox{}\\
-
+\noindent
 Creating a risk:
 \begin{itemize}
 	\setlength\itemsep{-1.5em}
@@ -137,7 +137,7 @@ Creating a risk:
 	\item And the user clicks on the "Propose risk" button.
 	\item Then the risk is synced with the server.
 \end{itemize}
-
+ 
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[h]
 	\centering
@@ -147,7 +147,7 @@ Creating a risk:
 \end{figure}
 
 \paragraph*{Alternative Flows}\mbox{}\\
-
+\noindent
 Reading a risk:  
 \begin{itemize}
 	\setlength\itemsep{-1.5em}
@@ -155,16 +155,16 @@ Reading a risk:
 	\item By clicking on a risk a detail risk view is opened.
 	\item For exiting the risk detail view a return button ("Close" button) is clicked.
 \end{itemize}
-
+\noindent
 Updating a risk: 
 \begin{itemize}
-	\setlength\itemsep{-1.5em}
+	\setlength\itemsep{-1.5em}	
 	\item The user is on the project overview site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
 	\item On the detail view there is a pen button, enabling editing and changing the "Close" button to a "Save" button.
 	\item When clicking the "Save" button the changes are syncronized with the server.
 \end{itemize} 
-
+\noindent
 Deleting a risk:
 \begin{itemize}
 	\setlength\itemsep{-1.5em}
@@ -189,8 +189,9 @@ The postconditions for this use case are:
 	\item The risk is immediately part of the projects risk table (this behavior is changed within UC6 Risk Discussion \ref{sec:domainBbg}).
 \end{enumerate}
 
+\noindent
 The persistence guidelines are: 
-
+\noindent
 The risk form was completely or partly filled by the user. When the user tries to leave the page now, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
 
 \newpage
