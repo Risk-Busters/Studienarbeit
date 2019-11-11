@@ -117,6 +117,7 @@ Following fields are filled later and are not part of the input form:
 	\item risk factor (Enum)
 	\item response (Objects)  
 	\item person in charge (User)
+	\item public risk (boolean)
 \end{itemize}
 
 \paragraph*{Screenshots}\mbox{}\\
@@ -135,7 +136,7 @@ Creating a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1.5em}
-	\item  When the user clicks the + button at the project overview page.
+	\item  When the user clicks the "+" button at the project overview page.
 	\item Then the screen for adding a new risk is opened.
 	\item When the risk form is filled by the user.
 	\item And the user clicks on the "Propose risk" button.
@@ -148,7 +149,7 @@ Reading a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The user is on the project overview site with all project risks
+	\item The user is on the project overview site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
 	\item For exiting the risk detail view a return button ("Close" button) is clicked.
 \end{itemize}
@@ -171,7 +172,7 @@ Deleting a risk:
 	\setlength\itemsep{-1em}
 	\item The user is on the project overview site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
-	\item By clicking a "Delete" button the risk is deleted. This behavior is changed in UC6 Risk Discussion \ref{sec:domainBbg}.
+	\item By clicking a "Delete" button the risk is deleted. This behavior is changed in UC6 Risk Discussion described in chapter \ref{sec:domainBbg}.
 \end{itemize}
 
 \spacing{1.5}
@@ -194,7 +195,7 @@ The preconditions for this use case are:
 	\setlength\itemsep{-1em}
 	\item A project exists.
 	\item The user is member of the project.
-	\item The user has clicked the + button at the project overview page to add a new risk.
+	\item The user has clicked the "+" button at the project overview page to add a new risk.
 \end{enumerate}
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
@@ -202,11 +203,12 @@ The postconditions for this use case are:
 \begin{enumerate}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The risk is immediately part of the projects risk table (this behavior is changed within UC6 Risk Discussion \ref{sec:domainBbg}).
+	\item The risk is immediately part of the projects risk table (this behavior is changed within UC6 Risk Discussion described in chapter \ref{sec:domainBbg}).
 \end{enumerate}
 
 \noindent
 The persistence guidelines are: 
+\newline
 \noindent
 The risk form was completely or partly filled by the user. When the user tries to leave the page now, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
 
