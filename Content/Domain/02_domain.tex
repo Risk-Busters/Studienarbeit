@@ -1,7 +1,7 @@
 %%%--------------------------------%%%
 %%% Domain
 %%%--------------------------------%%%
-
+\newpage
 \section{Software Specification}
 \label{sec:domainB}
 
@@ -11,48 +11,496 @@ What is the software for and what is not part of the project (I'm integrating th
 
 \subsection{Functionalities}
 \label{sec:domainBb}
-Basically just the use cases
+Basically just the \ac{UC}
 
 \subsubsection{Overall Use Case Diagram}
 \label{sec:domainBba}
 
-\subsubsection{Use Case Specification: Use Case X}
+
+\newpage
+% UC1 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}1 User CRUD}
 \label{sec:domainBbb}
 
-\paragraph{Description}\mbox{}\\
+\paragraph*{Description}\mbox{}\\
 Describe the functionality
 
-\paragraph{Screenshots}\mbox{}\\
+\paragraph*{Screenshots}\mbox{}\\
 Insert screenshots and shortly explain what can be seen
-\begin{figure}[ScreenshotX] 
+\begin{figure}[h] 
 	\centering
-	\includegraphics[width=0.8\textwidth]{/Path}
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
 	\caption{Use Case X: Detail}
 	\label{fig:useCaseXDetailY}
 \end{figure}
 
-\paragraph{Basic Flow} \mbox{}\\
+\paragraph*{Basic Flow} \mbox{}\\
 
 Describe the most common path through this use case
 
 \subparagraph{Activity Diagram}\mbox{}\\
-\begin{figure}[Activity Diagram]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{/Path}
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
 	\caption{Activity Diagram Use Case X}
 	\label{fig:activityDiagramX}
 \end{figure}
 
-\paragraph{Alternative Flows}\mbox{}\\
+\paragraph*{Alternative Flows}\mbox{}\\
 What can go wrong :D
 
-\paragraph{Special Requirements and Preconditions}\mbox{}\\
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
 Where does the user come from, what does he have to do before he gets here
 
-\paragraph{Postconditions and Persistance}\mbox{}\\
+\paragraph*{Postconditions and Persistance}\mbox{}\\
 What has changed and how do we make sure the change persists?
 
-TODO: INSERT ALL USE CASES
+
+\newpage
+% UC2 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}2 Team Access Management CRUD}
+\label{sec:domainBbc}
+
+\paragraph*{Description}\mbox{}\\
+Describe the functionality
+
+\paragraph*{Screenshots}\mbox{}\\
+Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Use Case X: Detail}
+	\label{fig:label1}
+\end{figure}
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+Describe the most common path through this use case
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Activity Diagram Use Case X}
+	\label{fig:label11}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+What can go wrong :D
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+Where does the user come from, what does he have to do before he gets here
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+What has changed and how do we make sure the change persists?
+
+\newpage
+% UC3 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}3 Risk CRUD}
+\label{sec:domainBbd}
+
+\paragraph*{Description}\mbox{}\\
+This use case allows users to create, read, update and delete risks. 
+A risk consists of the following fields:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item name (String)
+	\item description (String)
+\end{itemize}
+Following fields are filled later and are not part of the input form:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item probability of occurence (Enum)
+	\item impact (Enum)
+	\item risk factor (Enum)
+	\item response (Objects)  
+	\item person in charge (User)
+	\item public risk (boolean)
+\end{itemize}
+
+\paragraph*{Screenshots}\mbox{}\\
+tbd: Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{\ac{UC}3 Risk CRUD: TODO}
+	\label{fig:label3}
+\end{figure}
+
+\newpage
+\paragraph*{Basic Flow} \mbox{}\\
+\noindent
+Creating a risk:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1.5em}
+	\item  When the user clicks the "+" button at the project overview page.
+	\item Then the screen for adding a new risk is opened.
+	\item When the risk form is filled by the user.
+	\item And the user clicks on the "Propose risk" button.
+	\item Then the risk is synced with the server.
+\end{itemize}
+
+\spacing{1}
+\noindent
+Reading a risk:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the project overview site with all project risks.
+	\item By clicking on a risk a detail risk view is opened.
+	\item For exiting the risk detail view a return button ("Close" button) is clicked.
+\end{itemize}
+
+\noindent
+Updating a risk: 
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the project overview site with all project risks.
+	\item By clicking on a risk a detail risk view is opened.
+	\item On the detail view there is a pen button, enabling editing and changing the "Close" button to a "Save" button.
+	\item When clicking the "Save" button the changes are syncronized with the server.
+\end{itemize} 
+
+\noindent
+Deleting a risk:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the project overview site with all project risks.
+	\item By clicking on a risk a detail risk view is opened.
+	\item By clicking a "Delete" button the risk is deleted. This behavior is changed in UC6 Risk Discussion described in chapter \ref{sec:domainBbg}.
+\end{itemize}
+
+\spacing{1.5}
+ 
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Content/Domain/UC3RiskCRUDactivitydiagram.png}
+	\caption{Activity Diagram \ac{UC}3 Risk CRUD}
+	\label{fig:activityDiagramUC3}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+n/a
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+The preconditions for this use case are:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item A project exists.
+	\item The user is member of the project.
+	\item The user has clicked the "+" button at the project overview page to add a new risk.
+\end{enumerate}
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+The postconditions for this use case are:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The risk is immediately part of the projects risk table (this behavior is changed within UC6 Risk Discussion described in chapter \ref{sec:domainBbg}).
+\end{enumerate}
+
+\noindent
+The persistence guidelines are: 
+\newline
+\noindent
+The risk form was completely or partly filled by the user. When the user tries to leave the page now, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
+
+\newpage
+% UC4 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}4 Project risk overview}
+\label{sec:domainBbe}
+
+\paragraph*{Description}\mbox{}\\
+Describe the functionality
+
+\paragraph*{Screenshots}\mbox{}\\
+Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Use Case X: Detail}
+	\label{fig:label4}
+\end{figure}
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+Describe the most common path through this use case
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Activity Diagram Use Case X}
+	\label{fig:label44}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+What can go wrong :D
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+Where does the user come from, what does he have to do before he gets here
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+What has changed and how do we make sure the change persists?
+
+\newpage
+% UC5 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}5 Risk Pool}
+\label{sec:domainBbf}
+
+\paragraph*{Description}\mbox{}\\
+Describe the functionality
+
+\paragraph*{Screenshots}\mbox{}\\
+Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Use Case X: Detail}
+	\label{fig:label5}
+\end{figure}
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+Describe the most common path through this use case
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Activity Diagram Use Case X}
+	\label{fig:label55}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+What can go wrong :D
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+Where does the user come from, what does he have to do before he gets here
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+What has changed and how do we make sure the change persists?
+
+\newpage
+% UC6 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}6 Risk Discussion}
+\label{sec:domainBbg}
+
+\paragraph*{Description}\mbox{}\\
+The process of adding risks to a project is based on three steps:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item A project member proposes a risk (name and description). (UC3 Risk CRUD defined in chapter \ref{sec:domainBbd}).
+	\item A specified number of project members review the proposed risk. After the review process the risk is ready for discussion.
+	\item The whole project team discusses and defines:
+	\begin{itemize}
+		\vspace{-3mm}
+		\setlength\itemsep{-1em}
+		
+		\item probability of occurence
+		\item impact
+		\item risk factor (defined by probability of occurence and impact)
+		\item response(s)
+		\item person in charge
+	\end{itemize}
+\end{enumerate}
+
+\paragraph*{Screenshots}\mbox{}\\
+tbd: Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{\ac{UC}6 Risk Discussion: TODO}
+	\label{fig:label6}
+\end{figure}
+
+\newpage
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item A project member proposes a risk (name and description as defined in UC3 Risk CRUD chapter \ref{sec:domainBbd})
+	\begin{itemize}
+		\vspace{-3mm}
+		\setlength\itemsep{-1em}
+		
+		\item The proposed risk is visible in the section proposed risks at the project overview page ("Proposed risks").
+		\item All members of the project receive a notification (in their activity stream) about the new proposed risk and the request to review it.
+	\end{itemize}
+	
+	\item A specified number of project members review the proposed risk. After the review process the risk is ready for discussion.
+	\begin{itemize}
+		\vspace{-3mm}
+		\setlength\itemsep{-1em}
+		
+		\item When the specified number of project members have positively reviewed the risk, it is visible in the section ("Risks open to discussion").
+		\item The project owner is able to manually start an estimation session for the risk (not recommended). The recommended way is to wait until a specified number of risks open for estimation are collected. Then an estimation session for all risks is automatically started.
+	\end{itemize}
+		
+	\item The risk is estimated by the whole project team:
+	\begin{itemize}
+		\vspace{-3mm}
+		\setlength\itemsep{-1em}
+		
+		\item All project members receive a notification (in their activity stream) to estimate the risk in terms of (probability of occurrence, impact) and to add response(s). Probability of occurrence and impact are mandatory fields, response(s) are optional.
+		\item The risk factor is determined by the probability of occurrence and the impact.
+		\item It is checked if at least one response is defined. If not the project members are notified to add a response.
+		\item In the last step the person in charge is defined. Therefore a notification where the user is able to sign up for being responsible for the risk is sent to all project members.  
+	\end{itemize}
+
+	\item Finally the risk appears at the project risk table ("Project risks").
+	
+\end{enumerate}
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[!hp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Content/Domain/UC6RiskDiscussion.png}
+	\caption{Activity Diagram \ac{UC}6 Risk Discussion}
+	\label{fig:label66}
+\end{figure}
+
+\newpage
+
+\paragraph*{Alternative Flows}\mbox{}\\
+
+\noindent
+Proposed risk receives negative reviews:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item A project member negatively reviews a risk.
+	\item The reviewing person adds feedback for the risk which is sent to the risk owner.
+	\item The risk owner can edit or delete the proposed risk.
+	\item When the risk is deleted it is removed from the section proposed risks.
+	\item When the risk is edited the review process data is removed and the message for reviewing is sent again.
+\end{itemize}
+
+\noindent
+Project members doesn't react to their notifications to:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item review a risk: When the needed amount of reviews is not achieved the notification is sent again.
+	\item estimate a risk: When the needed amount of estimations is not achieved the notification is sent again.
+	\item define a person in charge: When no person volunteers the notification is sent again. For finding a risk person in charge fast the Gamification concept Challenge is used.
+\end{enumerate}
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+The preconditions for this use case are:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item  A project exists.
+	\item The user is member of the project.
+	\item The user has proposed a risk.
+\end{enumerate}
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+The postconditions for this use case are:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	
+	\item The proposed risk was reviewed and estimated. 
+	\item The risk contains all relevant data.
+	\item The risk is visible as part of the projects risk table.
+\end{enumerate}
+
+\newpage
+% UC7 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}7 Risk Monitoring}
+\label{sec:domainBbh}
+
+\paragraph*{Description}\mbox{}\\
+Describe the functionality
+
+\paragraph*{Screenshots}\mbox{}\\
+Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Use Case X: Detail}
+	\label{fig:label7}
+\end{figure}
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+Describe the most common path through this use case
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Activity Diagram Use Case X}
+	\label{fig:label77}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+What can go wrong :D
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+Where does the user come from, what does he have to do before he gets here
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+What has changed and how do we make sure the change persists?
+
+\newpage
+% UC8 ====================================================
+\subsubsection{Use Case Specification: \ac{UC}8 Risk Response Management}
+\label{sec:domainBbi}
+
+\paragraph*{Description}\mbox{}\\
+Describe the functionality
+
+\paragraph*{Screenshots}\mbox{}\\
+Insert screenshots and shortly explain what can be seen
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Use Case X: Detail}
+	\label{fig:label8}
+\end{figure}
+
+\paragraph*{Basic Flow} \mbox{}\\
+
+Describe the most common path through this use case
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
+	\caption{Activity Diagram Use Case X}
+	\label{fig:label88}
+\end{figure}
+
+\paragraph*{Alternative Flows}\mbox{}\\
+What can go wrong :D
+
+\paragraph*{Special Requirements and Preconditions}\mbox{}\\
+Where does the user come from, what does he have to do before he gets here
+
+\paragraph*{Postconditions and Persistance}\mbox{}\\
+What has changed and how do we make sure the change persists?
+
+
+
+TODO: INSERT USE CASES CONTEXT
 
 \subsection{Requirements}
 \label{sec:domainBc}
