@@ -376,7 +376,7 @@ This use case has the following preconditions:
 \end{enumerate}
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
-What has changed and how do we make sure the change persists?
+The changes are instantly reflected in the database. Once the changes are confirmed corresponding PUT and DELETE requests update the database.
 
 \newpage
 % UC6 ====================================================
@@ -548,7 +548,7 @@ What can go wrong :D
 Where does the user come from, what does he have to do before he gets here
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
-What has changed and how do we make sure the change persists?
+Changes are directly reflected into the database via corresponding POST, PUT and DELETE requests.
 
 \newpage
 % UC8 ====================================================
@@ -556,7 +556,11 @@ What has changed and how do we make sure the change persists?
 \label{sec:domainBbi}
 
 \paragraph*{Description}\mbox{}\\
-Describe the functionality
+Responses are ways to react to a risk. A new response can be added to a risk from the risk detail page. A response contains a name, a type and a description as well as the information whether the described steps have already been undertaken or not. Depending on the Type of risk a reminder can be set to remind the risk owner to repeat the response tasks.\\
+The risk owner can remove a response on a project risk if the project manager concurs.\\
+If the risk is a pool risk the response can also be a pool response. Pool responses can only be removed if all project managers who currently reference the risk concur. However, pool responses can be deactivated for the current project with only the current project manager agreeing to prevent situationally unsuitable response reminders.\\
+A new response to a pool risk can be turned into a pool response via a voting process among team members.
+This is a CRUD use case.
 
 \paragraph*{Screenshots}\mbox{}\\
 Insert screenshots and shortly explain what can be seen
@@ -568,22 +572,85 @@ Insert screenshots and shortly explain what can be seen
 \end{figure}
 
 \paragraph*{Basic Flow} \mbox{}\\
+\noindent
+Creating a response:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1.5em}
+	\item When the user clicks the "+" button at the risk detail page in the response section.
+	\item Then the screen for adding a new response is opened.
+	\item When the response form is filled by the user.
+	\item And the user clicks on the "Add response" button.
+	\item Then the risk is synced with the server.
+\end{itemize}
 
-Describe the most common path through this use case
+\spacing{1}
+\noindent
+Reading a response:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the risk detail site for a project risk.
+	\item By clicking on a response a detail view is expanded.
+	\item For exiting the detail view a minimize button is clicked.
+\end{itemize}
+
+\noindent
+Updating a response: 
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the risk detail site for a project risk.
+	\item In the risk response section there is a pen button, which opens an editing form.
+	\item By clicking the "Save" button the risk owner is notified of the changes.
+	\item If the owner concurrs the changes are syncronized with the server.
+\end{itemize} 
+
+\noindent
+Deleting a response:
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is on the risk detail site for a project risks.
+	\item By clicking a "Delete" button the project manager receives a notification.
+	\item If the project manager concurrs the response is deleted.
+\end{itemize}
+
 
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
-	\caption{Activity Diagram Use Case X}
+	\caption{Activity Diagram Use Case 8}
 	\label{fig:label88}
 \end{figure}
 
 \paragraph*{Alternative Flows}\mbox{}\\
-What can go wrong :D
+In addition to the crud functionalities responses attached to a risk that references a pool risk can be nominated for becoming a pool response and thus being attached to pool risk permanently. The voting process is the same as for pool risk nomination described in UC 5\ref{sec:domainBbf}.
+The update and delete flows change if the response is a pool response attached to a pool risk.
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item Updating a pool response requires project manager concurrance.
+	\item Deleting a pool response will trigger a voting process as described in UC 5\ref{sec:domainBbf}. However it will be limited to project managers to prevent users from deleting unpleasant responses.
+\end{itemize}
+
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
-Where does the user come from, what does he have to do before he gets here
+The preconditions for this use case are:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item  A risk exists.
+	\item The user is member of the project containing the risk.
+	\item Deleting requires the user to also be the owner of the risk.
+\end{enumerate}
+For pool responses the following preconditions replace the above described:
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The response is attached to a pool risk.
+\end{enumerate}
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
 What has changed and how do we make sure the change persists?
