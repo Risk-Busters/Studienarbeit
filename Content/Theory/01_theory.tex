@@ -3,51 +3,118 @@
 %%%--------------------------------%%%
 \section{Risk Management}
 \label{sec:theoryA}
+Software projects in the past have struggled to succeed. The Standish Group \cite{thestandishgroupinternationalincChaosReport20152015} has compiled a database of over 25,000 software projects over the years 2011 to 2015. They found that only about 30 percent of these projects were successful without any curtailments. The larger the projects were the less often they turned out successful. This issue has been discussed in the literature since even before the early 1990ies \cite{Boehm1991SoftwareRM}. Almost two decades later the problem of IT project failure still persists motivating this work. 
 
+\subsection{Project Failure}
+\label{sec:theorAa}
 There are plenty of reasons for projects to fail and frequently even large companies and organizations experience costly failures of big projects \cite{dwivediResearchInformationSystems2015}. Projects are often defined as failed, when they cannot meet time or budget constraints or do not fulfill the pre-defined requirements. However, this definition is not useful in every context \cite{debakkerDoesRiskManagement2010}. IT projects often follow agile management techniques allowing for changes in the pre-defined scopes \cite{kusay-merkleAgilesProjektmanagementIm2018}. To allow for a wider understanding of what IT-project failure means Lyytien and Hirchheim group such failures into four different categories \cite{lyytinenInformationSystemsFailures1988}: 
 \begin{itemize}
 	\item Correspondence: Not meeting the pre-defined objectives
 	\item Process: Exceeding time or budget restrains
 	\item Interaction: Lack of end-user engagement
 	\item Expectation: Inability to meet stakeholder's expectations
-\end{itemize}	
+\end{itemize}
+Each of these shortcomings can be interpreted as project failure.
+
+\subsection{Reasons for Project Failure}
+\label{sec:theorAb}	
 Analogous to the variety of ways in which a project can be defined as being unsuccessful there are many reasons which can lead to any such failure. Plenty research has been done to investigate the causes of project failure \cite{guptaSystematicLiteratureReview2018}.  Events that lead to project failure can be understood as risks. Islam \cite{islamSoftwareDevelopmentRisk2011} provides the following definition for risks in an IT context:\\
 "Software risk, is defined as, the possibilities of suffering a loss such as budget or schedule over-runs, customer dissatisfaction, poor quality and passive customer involvement due to an undesirable event and its consequences during the life cycle of the project."
 
-Many such risk factors have been identified in the literature by now. The following risks are an excerpt from lists collect via literature reviews by Whitney and Daniels \cite{whitneyRootCauseFailure2013} and Tesch et al \cite{teschITProjectRisk2007}. 
+Many such risk factors have been identified in the literature by now. Whitney and Daniels \cite{whitneyRootCauseFailure2013} as well as Tesch et al \cite{teschITProjectRisk2007} present compilations of risk factors. Based on the risks provided the following types for risk factors were derived:
+ \begin{itemize}	
+ 	\item	Lack of support
+ 	\item	Resources and personnel	
+ 	\item	Scope and requirements	
+ 	\item	Technology and design	
+ 	\item	Communication and cooperation
+ 	\item	Discipline and motivation
+\end{itemize}		
+We group the risk factors collected by the abovementioned papers into these categories according to the following table.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
-		Whitney and Daniels  & Tech et al. \\
-		\begin{itemize}	\item	Lack of top management commitment to the project	
-			\item	Failure to gain user commitment	
-			\item	Misunderstanding the requirements	
-			\item	Lack of adequate user involvement	
-			\item	 Lack of required knowledge/skills in the project personnel	
-			\item	Changing scope/objectives	
-			\item	Introduction of new technology	
-			\item	Failure to manage end user expectations	
-			\item	Insufficient/inappropriate staffing	
-			\item	Poor project management	
-			\item	Excessive schedule pressure	
-			\item	Lack of technical specifications	\end{itemize}
-		&
-		\begin{itemize}	\item	 Personnel shortfall and straining computer science abilities	
-			\item	Unrealistic schedules and budgets	
-			\item	System functionality	
-			\item	Requirements management	
-			\item	Resource usage and performance	
-			\item	Personnel management	
-			\item	Unrealistic project goals and objectives	
-			\item	Poor project team composition	
-			\item   Project management and control problems	
-			\item	Problematic technology base/ infrastructure		 
-		\end{itemize}	
-	\end{tabular}
+	\caption{Categorization of risk factors}
+	\noindent\adjustbox{max width=\textwidth}{%
+	\begin{tabular}{c|c|c} \toprule 
+		Category  & Whitney and Daniels & Tesch et al \\ \midrule
+		Lack of support	 & 
+		\makecell{
+			Lack of executive support/commitment\\
+		}&
+		\makecell{
+			Lack of top management commitment to the project\\
+			Lack of corporate leadership\\
+		}\\ \hline
+		Resources and personnel	 & 
+		\makecell{
+			Personnel shortfall and straining computer science abilities\\
+			Shortfalls in procured components or labor\\
+			Resource usage and performance \\
+			Poor project team composition\\
+			Inadequate technical expertise\\
+		}&
+		\makecell{
+			Insufficient/inappropriate staffing\\
+			Inadequate skills and means\\
+		}\\ \hline
+		Scope and requirements &
+		\makecell{
+			Unrealistic schedules and budgets\\
+			Constantly changing requirements \\
+			Unrealistic project goals and objectives\\
+		}&
+		\makecell{
+			Lack of frozen requirements\\
+			Changing scope/objectives\\
+			Excessive schedule pressure\\
+			Changing needs\\
+			Excessive and secondary innovation\\
+			Requirements creep\\
+		}\\ \hline
+		Technology and design &
+		\makecell{
+			Developing wrong functions, properties, and/or user interfaces\\
+			System functionality\\
+			Problematic technology base/infrastructure\\
+		}&
+		\makecell{
+			Introduction of new technology\\
+			Lack of technical specification\\
+		}\\  \hline
+		Communication and cooperation &
+		\makecell{
+			Scheduling and timing\\
+			Subcontracting \\
+			Personnel management\\
+			Project management and control problems\\
+		}&
+		\makecell{
+			Lack of adequate user involvement\\
+			Failure to manage end user expectations\\
+			Misunderstanding the requirements\\
+			Conflict between user departments\\
+			Poorly communicated goals/deliverables\\
+			Poor project management\\
+			Lack of a documented project plan\\
+		} \\ \hline
+		Discipline and motivation &
+		\makecell{
+			None\\
+		}&
+		\makecell{
+			Failure to gain user commitment\\
+			Lack of scientific methods\\
+			Ignoring the obvious\\
+			Unethical behavior\\
+		} \\ \hline
+	\end{tabular}}
+	\label{tab:riskfactorscategorization}
 \end{table}
 To counter such risk factors risk management practices can be integrated into the overall project management. Risk management serves to identify risks, analyze them and to address them to minimize the damage these risks could do to project \cite{teschITProjectRisk2007}.
 
+\subsection{Project Risk Management}
+\label{sec:theoryAc}
 Risk management is a process that should be initiated early in the project lifecycle to enable proactive handling of threats \cite{islamSoftwareDevelopmentRisk2011}. In general the cycle of risk management involves the following steps: Identification, Analysis, Response/Treatment and monitoring and control \cite{islamSoftwareDevelopmentRisk2011}, \cite{teschITProjectRisk2007}, \cite{didragaRoleEffectsRisk2013}. The steps should be undertaken at the beginning of the project and updated whenever changes occur. There are different and more detailed variations \cite{teschITProjectRisk2007}, however for the purpose of this paper the general model will be assessed in more detail.
 
 \begin{figure}[htbp] 
@@ -70,6 +137,7 @@ Risk control serves to initiate action on the monitored risks and to direct acti
 \begin{table}[H]
 	\centering
 	\caption{Summary effects and practices of the different phases of risk management}
+	\noindent\adjustbox{max width=\textwidth}{%
 \begin{tabular}{c|c|c} \toprule 
 Phase  & Effects on the project & Risk management practices \\ \midrule
  Risk identification & 
@@ -101,13 +169,15 @@ Phase  & Effects on the project & Risk management practices \\ \midrule
  	Trend analysis\\
  	Status meeting 	
  } \\ \hline
-	\end{tabular}
+	\end{tabular}}
 	\label{tab:riskmanagemensummery}
 \end{table}
 Different studies have been undertaken to evaluate the effect of risk management on project success \cite{debakkerDoesRiskManagement2010}, \cite{didragaRoleEffectsRisk2013}, \cite{kwakProjectRiskManagement2004}, \cite{juniorUnderstandingImpactProject2013}. The results vary regarding which part of risk management or which tools and techniques contribute to projects success but some sort of positive impact is reported from all of them.
 
 However, in practice risk management is often neglected \cite{kwakProjectRiskManagement2004}. Even if there is initial investment into risk management during the planning phase of a project there are tendencies to let efforts slide once the project is running and time pressure picks up \cite{peixotoProjectRiskManagement2014}. Another attitude towards risk management that has been observed is to view it as additional work and cost which can hinder the adoption of any such practices \cite{teschITProjectRisk2007}.
 
+\subsection{Conclusions for Risk Management Software}
+\label{sec:theoryAd}
 For the development of a software tool to facilitate risk management in IT projects the following conclusions can be drawn from the above presented:
 \begin{itemize}
 	\item The tool should provide functionalities for all four phases of risk management
@@ -123,3 +193,5 @@ Further aspects to pay attention to when developing a risk management tool as pr
 	\item	Comprehensiveness
 	\item	Automation	
 \end{itemize}
+
+As presented above the topic of risk management in IT projects is widely covered in the literature. Risk management tools are available on the market and also discussed on a theoretical basis as seen in Keshlaf and Hashim. The novelty of this project is that we emphasize user engagement by employing gamification techniques as presented in the following chapter.
