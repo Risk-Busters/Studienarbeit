@@ -47,11 +47,37 @@ Following mechanics are used and described in detail:
 \end{itemize}
 
 \paragraph*{Activity Stream and Notifications}
-The activity stream represents the start page and is a key component of the application. Through it the user is notified about relevant changes. Furthermore the sent messages can motivate the user to 
+The activity stream represents the start page and is a key component of the application. Through it the user is notified about relevant changes. Furthermore the sent messages can motivate the user to directly jump into a specific workflow or task. 
+It is part of the application wide engagement loop. Especially accountable for the initial motivating emotion and the call to action.
+%TODO ??? With notifications appearing 
+%Push notifications
+%-> abgewandelte form von operant conditioning mit variable ratio
 
-Push notifications
+The used patterns are the activity stream as social pattern and notifications as interface pattern.
+
+The activity streams is implemented as part of \ac{UC}10 Activity Stream (\ref{sec:domainBbk}).
 
 \paragraph*{Growth, Specialization—Badge and Increased Responsibility}
+
+Depending on their level of interacting with the application users can be classified on the range between beginner and advanced. This can be mapped by following five Specialization—Badges:
+
+project manager > risk buster > risk sage > risk owner > project member
+
+\begin{enumerate}
+	\item Project member: basic project member without any specific rights
+	\item Risk owner: reached by owning TODO: XYZ risks (being the person in charge).
+	\item Risk sage: reached by reviewing and contributing TODO: XYZ risks.
+	\item Risk buster: reached by successfully contributing TODO: XYZ risk responses.
+	\item Project manager: highest achievable badge with right for creating new projects and managing existing projects.
+\end{enumerate}
+
+Growth is achieved in two areas. On the one hand Specialization—Badges and on the other hand the further development of project risks.
+
+Increased responsibility is used for the process of creating and managing a project. There are two workflows how a project can be initialized. The first possibility is that a user who has reached the project manager Specialization—Badge creates the project. The second possibility is that at least two members insure, that one person can be a project manager.
+
+All three patterns (Growth, Specialization—Badge, Increased Responsibility) belong to the group of gameful patterns.
+
+They are implemented as part of \ac{UC}1 User CRUD (\ref{sec:domainBbb}), \ac{UC}2 Team Access CRUD (\ref{sec:domainBbc}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}11 Progress Indicator (\ref{sec:domainBbl}).
 
 \paragraph*{Self defined challenges}
 
@@ -62,6 +88,8 @@ Push notifications
 \paragraph*{Journey}
 
 \paragraph*{Social Feedback/Feedback loops}
+
+u.a. Risk discussion (review process)
 
 \paragraph*{Task Queue}
 
