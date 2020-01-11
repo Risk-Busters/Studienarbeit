@@ -54,7 +54,6 @@ It is part of the application wide engagement loop. Especially accountable for t
 %-> abgewandelte form von operant conditioning mit variable ratio
 
 The used patterns are the activity stream as social pattern and notifications as interface pattern.
-
 The activity streams is implemented as part of \ac{UC}10 Activity Stream (\ref{sec:domainBbk}).
 
 \paragraph*{Growth, Specialization—Badge and Increased Responsibility}
@@ -76,10 +75,20 @@ Growth is achieved in two areas. On the one hand Specialization—Badges and on 
 Increased responsibility is used for the process of creating and managing a project. There are two workflows how a project can be initialized. The first possibility is that a user who has reached the project manager Specialization—Badge creates the project. The second possibility is that at least two members insure, that one person can be a project manager.
 
 All three patterns (Growth, Specialization—Badge, Increased Responsibility) belong to the group of gameful patterns.
-
 They are implemented as part of \ac{UC}1 User CRUD (\ref{sec:domainBbb}), \ac{UC}2 Team Access CRUD (\ref{sec:domainBbc}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}11 Progress Indicator (\ref{sec:domainBbl}).
 
 \paragraph*{Self defined challenges}
+
+Applied challenges have a positive impact while doing and after completing. While doing the user is motivated to complete the challenge. By completing challenges the users are feeling competent and their self-efficacy is increasing. A possible risk could be challenges that are too difficult and therefore demotivating. That is why we use the concept of self defined challenges. By setting the challenges by their own the probability of success is increased.
+
+Self defined challenges appear at several locations in the risk management application:
+\begin{itemize}
+	\item Project initialization (e.g. project manager defines how many risks should be contributed in a self defined time period)
+	\item Risk Monitoring (e.g. daily, weekly or monthly question if preventive action was done with reminder as notification before that)
+\end{itemize}
+
+The challenges mechanic is part of the gameful patterns. 
+Self defined challenges are implemented as part of \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}) and \ac{UC}9 Project initialization (\ref{sec:domainBbj}).
 
 \paragraph*{Praise and Rewards (Score)}
 
@@ -92,6 +101,8 @@ They are implemented as part of \ac{UC}1 User CRUD (\ref{sec:domainBbb}), \ac{UC
 u.a. Risk discussion (review process)
 
 \paragraph*{Task Queue}
+
+Flow
 
 \paragraph*{Further used patterns}
 
