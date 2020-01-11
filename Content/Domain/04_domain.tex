@@ -79,12 +79,14 @@ They are implemented as part of \ac{UC}1 User CRUD (\ref{sec:domainBbb}), \ac{UC
 
 \paragraph*{Self defined challenges}
 
+%TODO einbauen? -> falls ja noch Quelle suchen
+%"If it doesn't challenge you it doesn't change you" - Fred Devito
 Applied challenges have a positive impact while doing and after completing. While doing the user is motivated to complete the challenge. By completing challenges the users are feeling competent and their self-efficacy is increasing. A possible risk could be challenges that are too difficult and therefore demotivating. That is why we use the concept of self defined challenges. By setting the challenges by their own the probability of success is increased.
 
 Self defined challenges appear at several locations in the risk management application:
 \begin{itemize}
 	\item Project initialization (e.g. project manager defines how many risks should be contributed in a self defined time period)
-	\item Risk Monitoring (e.g. daily, weekly or monthly question if preventive action was done with reminder as notification before that)
+	\item Risk Monitoring (e.g. daily, weekly or monthly question if preventive action was done with reminder as notification before that. Tries to support habit building)
 \end{itemize}
 
 The challenges mechanic is part of the gameful patterns. 
@@ -92,7 +94,22 @@ Self defined challenges are implemented as part of \ac{UC}7 Risk Monitoring (\re
 
 \paragraph*{Praise and Rewards (Score)}
 
+Users are rewarded by points for performing desired behavior. These mechanics are needed as a basis for a collaborative form of leaderboards (next paragraph). The collaborative leaderboard provides the user direct feedback why it is worthwhile to collect points. So praise and rewards in combination with collaborative leaderboards are trying to achieve a positive conditioning.
+
+Points can be achieved by performing desired behavior. Desired are:
+\begin{itemize}
+	\item proposing risks
+	\item reviewing risks
+	\item be person in charge
+	\item be active part of the community (e.g. contribute and manage pool risks and pool risk responses)
+\end{itemize}
+
+Praise is an Interface Pattern and Score a Gameful Pattern.
+Praise and rewards are implemented as part of \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}) and \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}).
+
 \paragraph*{Collaborative form of leaderboards}
+
+Team vs Team Vergleich mit Sportarten challenge Charakter
 
 \paragraph*{Journey}
 
