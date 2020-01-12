@@ -94,7 +94,7 @@ Self defined challenges are implemented as part of \ac{UC}7 Risk Monitoring (\re
 
 \paragraph*{Praise and Rewards (Score)}
 
-Users are rewarded by points for performing desired behavior. These mechanics are needed as a basis for a collaborative form of leaderboards (next paragraph). The collaborative leaderboard provides the user direct feedback why it is worthwhile to collect points. So praise and rewards in combination with collaborative leaderboards are trying to achieve a positive conditioning.
+Users are rewarded by points for performing desired behavior. This adds extrinsic motivational factors to the application. These mechanics are needed as a basis for a collaborative form of leaderboards (next paragraph). The collaborative leaderboard provides the user direct feedback why it is worthwhile to collect points. So praise and rewards in combination with collaborative leaderboards are trying to achieve a positive conditioning.
 
 Points can be achieved by performing desired behavior. Desired are:
 \begin{itemize}
@@ -109,17 +109,41 @@ Praise and rewards are implemented as part of \ac{UC}5 Risk Pool (\ref{sec:domai
 
 \paragraph*{Collaborative form of leaderboards}
 
-Team vs Team Vergleich mit Sportarten challenge Charakter
+As described above the users are rewarded for desired behavior. Hence the slope of the graph (points over time) are an user activity indicator. Furthermore his own activity graph is easily visible for the user through the user profile page.
+Instead of comparing one individual against another individual based on this points score (classical form of leaderboards) we use a team based comparison concept. 
+In detail following features are planned:
+\begin{itemize}
+	\item For each project team the \textbf{medium of the activity score of all project members} is calculated. This results in an activity score for each project and enables the comparison of different projects. This is done through an anonymized leaderboard (e.g. "Your project activity is currently at position X of Y projects"). Furthermore it is connected with concrete tips, how the position can be topped.
+	\item The project can be classified based on the \textbf{sum of all points from each project member}. Based on this the project can be classified as "bronze", "silver" and "gold" project.
+\end{itemize}
+
+By comparing whole projects and their teams the competitive character of leaderboards is moderated and completed with cooperative elements. This strengthens the group spirit. The operativeness can be observed in team sports. The fact of being a member of a team and being able to achieve something together develops new motivation.
+
+TODO: Warum Teammotivation besser als Einzelmotivation (Paper suchen!)
+%TODO:
+TODO: wissenschaftliches Paper cooperative vs. competitive zitieren?!
+
+Leaderboards are a gameful pattern. 
+The collaborative leaderboards are implemented as part of \ac{UC}2 Team Access CRUD (\ref{sec:domainBbc}) and \ac{UC}9 Project initialization (\ref{sec:domainBbj}).
 
 \paragraph*{Journey}
+
+
+The user journey is implemented as part of \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
 
 \paragraph*{Social Feedback/Feedback loops}
 
 u.a. Risk discussion (review process)
 
+TODO: genaue Aufzählung an welcher Stelle in welcher Form
+
+Social feedback and feedback loops are implemented as part of \ac{UC}4 Risk Adjustment (\ref{sec:domainBbe}), \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}9 Project initialization (\ref{sec:domainBbj}), \ac{UC}10 Activity Stream (\ref{sec:domainBbk}) and \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
+
 \paragraph*{Task Queue}
 
 Flow
+
+Task Queues are implemented as part of \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}9 Project initialization (\ref{sec:domainBbj}), \ac{UC}10 Activity Stream (\ref{sec:domainBbk}) and \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
 
 \paragraph*{Further used patterns}
 
