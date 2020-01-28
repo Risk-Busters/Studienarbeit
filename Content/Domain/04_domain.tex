@@ -133,17 +133,32 @@ The user journey is implemented as part of \ac{UC}11 Progress Indicator (\ref{se
 
 \paragraph*{Social Feedback/Feedback loops}
 
-u.a. Risk discussion (review process)
+TODO: warum ist das toll? -> auf Theoriekapitel Bezug nehmen
 
-TODO: genaue Aufzählung an welcher Stelle in welcher Form
+\begin{itemize}
+	\item Risk discussion process (chapter \ref{sec:domainBbg}): Risks traverse a review and discussion process before they are added as final risks. This process is built onto social feedback and interaction between the project members.
+	\item Risk adjustment process (chapter \ref{sec:domainBbe}): After adding risks they are classified by the team based on their threat probability.
+	\item Progress indicators (chapter \ref{sec:domainBbi}): The application clearly makes the current state and progress visible to the user. Based on Specialization-Badges it is clearly visible if a user is a beginner, medium or advanced. Based on this state different support is guided by the application. E.g. if you are new to the application the risk discussion process is in need of explanation, whereas for an advanced user the process is completely clear.
+\end{itemize}
+
+TODO: eventuell weitere Beispiele?
 
 Social feedback and feedback loops are implemented as part of \ac{UC}4 Risk Adjustment (\ref{sec:domainBbe}), \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}9 Project initialization (\ref{sec:domainBbj}), \ac{UC}10 Activity Stream (\ref{sec:domainBbk}) and \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
 
 \paragraph*{Task Queue}
 
-Flow
+Task Queues provide tasks which can be done next. In best case this supports the Flow experience (described in theory chapter \ref{flow}).
+They are implemented at following parts of the application:
+\begin{itemize}
+	\item After proposing a risk: propose another risk, review a risk
+	\item After adding a risk to the risk pool: add another pool risk, add risk response
+	\item The whole process of initializing a project is guided and uses task queues.
+	\item After monitoring one risk: monitor another risk (if you are the person in charge)
+\end{itemize}
+%TODO: 
+TODO: list not final yet
 
-Task Queues are implemented as part of \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}9 Project initialization (\ref{sec:domainBbj}), \ac{UC}10 Activity Stream (\ref{sec:domainBbk}) and \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
+Task Queues are an Information Pattern and implemented as part of \ac{UC}5 Risk Pool (\ref{sec:domainBbf}), \ac{UC}6 Risk Discussion (\ref{sec:domainBbg}), \ac{UC}7 Risk Monitoring (\ref{sec:domainBbh}), \ac{UC}8 Risk Response Management (\ref{sec:domainBbi}), \ac{UC}9 Project initialization (\ref{sec:domainBbj}), \ac{UC}10 Activity Stream (\ref{sec:domainBbk}) and \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
 
 \paragraph*{Further used patterns}
 
