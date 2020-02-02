@@ -60,11 +60,12 @@ The activity streams is implemented as part of \ac{UC}10 Activity Stream (\ref{s
 
 Depending on their level of interacting with the application users can be classified on the range between beginner and advanced. This can be mapped by following five Specialization—Badges:
 
-project manager > risk buster > risk sage > risk owner > project member
+project manager > risk buster > risk sage > risk master > risk owner > project member
 
 \begin{enumerate}
 	\item Project member: basic project member without any specific rights
 	\item Risk owner: reached by owning TODO: XYZ risks (being the person in charge).
+	\item Risk master: reached by being part of TODO: XYZ risk ranking processes.
 	\item Risk sage: reached by reviewing and contributing TODO: XYZ risks.
 	\item Risk buster: reached by successfully contributing TODO: XYZ risk responses.
 	\item Project manager: highest achievable badge with right for creating new projects and managing existing projects.
@@ -128,12 +129,38 @@ The collaborative leaderboards are implemented as part of \ac{UC}2 Team Access C
 
 \paragraph*{Journey}
 
+By individually supporting the user while using the application one can lower the probability of disappointed users. Based on the current phase of the user (beginner, medium, advanced) the application provides different assistance. Following listings describe the specific intended actions in detail:
 
+\noindent
+Beginner level:
+\begin{itemize}
+	\item Introduction to the application and it's aims at the first application start.
+	\item Explanation of the risk discussion process.
+	\item Presentation of the risk pool concept.
+\end{itemize}
+
+\noindent
+Medium level:
+\begin{itemize}
+	\item Show path to mastery through Specialization—Badges and Task Queues.
+	\item Visible feedback of the current progress through progress bars.
+\end{itemize}
+
+\noindent
+Advanced level:
+\begin{itemize}
+	\item No disturbing information boxes about basic tasks.
+	\item Increased responsibility as a project manager.
+\end{itemize}
+
+\noindent
 The user journey is implemented as part of \ac{UC}11 Progress Indicator (\ref{sec:domainBbi}).
 
 \paragraph*{Social Feedback/Feedback loops}
 
-TODO: warum ist das toll? -> auf Theoriekapitel Bezug nehmen
+Built onto the theory behind human motivation, behavioral psychology and behavioral economics the core engagement loop tries to built a positive and motivating user experience centering the user/player. This is done by following the four steps already introduced in the theory chapter \ref{fig:engagementLoop}. They are: Motivate Emotion -> Call to Action -> Re-Engage -> Feedback Reward. 
+
+By building use cases implementing these four steps the user's motivation for doing specific tasks can be increased. Some parts of the application using engagement loops are listed in the following:
 
 \begin{itemize}
 	\item Risk discussion process (chapter \ref{sec:domainBbg}): Risks traverse a review and discussion process before they are added as final risks. This process is built onto social feedback and interaction between the project members.
