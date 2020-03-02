@@ -17,6 +17,12 @@ We have developed eleven use cases that describe the program functionalities. Th
 
 \subsubsection{Overall Use Case Diagram}
 \label{sec:domainBba}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Content/Domain/OUCD.png}
+	\caption{Overall Use Case Diagram}
+	\label{fig:label10}
+\end{figure}
 
 \spacing{1}
 %%%--------------------------------%%%
@@ -40,16 +46,16 @@ We have developed eleven use cases that describe the program functionalities. Th
 This project is being developed as a student research project and part of the authors’ curriculum and thus subject to the regulations of the Duale Hochschule Baden-Württemberg \cite{ leitlinienfachkommissiontechnikLeitlinienFurBearbeitung}. Given the limitations due to this circumstance we still aspire for our software to meet the following requirements.
 \paragraph*{Usability}
 \label{sec:domainBca}
-For the application to be usable on desktop and mobile device we use responsive design. We also aim for intuitive design using known symbols and functionalities to ensure user comfort.
+For the application to be usable on desktop and mobile device we use responsive design. We also aim for intuitive design using known symbols and functionalities to ensure user comfort. We adhere to design guidelines and we used a mock-up prototype to receive early user feedback.
 \paragraph*{Reliability}
 \label{sec:domainBcb}
-NO hosting here :D
+We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the repective company's control. Therefore in terms of reliabilty we aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state of the art technology such as React with Redux, Spring Boot and a Postgre SQL database.
 \paragraph*{Performance}
 \label{sec:domainBcc}
-To make our application fast and scalable we use RESTful apis.
+To make our application fast and scalable we use RESTful apis. Our front end is designed as a single page application for faster in-app performance. For future development this also offers the option to develop offline functionalities. Our back end uses a container based approach using docker and docker compose.
 \paragraph*{Supportability}
 \label{sec:domainBcd}
-We use sonar to ensure code quality for future maintance and expandability.
+We use sonar to ensure code quality for future maintance and expandability. We work with contious integration, deployment and delivery to maintain program stability using appropiate unit and integration tests. Furthermore we do code reviews and follow the SOLID design principles.  
 
 \subsection{Design Constraints}
 \label{sec:domainBd}
