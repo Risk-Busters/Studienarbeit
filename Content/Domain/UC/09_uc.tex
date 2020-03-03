@@ -8,7 +8,7 @@
 \label{sec:domainBbj}
 
 \paragraph*{Description}\mbox{}\\
-Describe the functionality
+To begin with the risk management process inital risk contributions are needed. Therefore a project is initialized with a starting challenge. The project manager sets an initial number of risks to be contributed, a deadline for them and a minimum number of supporters for a risk to be accepted into the discussion, as well as a deadline for the initial discussion process.
 
 \paragraph*{Screenshots}\mbox{}\\
 Insert screenshots and shortly explain what can be seen
@@ -21,23 +21,35 @@ Insert screenshots and shortly explain what can be seen
 
 \paragraph*{Basic Flow} \mbox{}\\
 
-Describe the most common path through this use case
+\begin{itemize}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The project manager opens an unitialized project.
+	\item They enter the above described paramters.
+	\item They press the initialize button.
+	\item All project members are notified.
+\end{itemize} 
 
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
-	\caption{Activity Diagram Use Case X}
-	\label{fig:label10}
+	\includegraphics[width=1.0\textwidth]{Content/Domain/UC9Initialization.png}
+	\caption{Activity Diagram  \ac{UC}9 Project Initialization}
+	\label{fig:label14}
 \end{figure}
 
 \paragraph*{Alternative Flows}\mbox{}\\
-What can go wrong :D
+The initalization is canceled.
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
-Where does the user come from, what does he have to do before he gets here
+\begin{enumerate}
+	\vspace{-3mm}
+	\setlength\itemsep{-1em}
+	\item The user is a project manager.
+	\item The project manager has already created a new project.
+\end{enumerate}
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
-What has changed and how do we make sure the change persists?
+The project will only be accessible and contain all its other described functions after being initialized.
 
 
