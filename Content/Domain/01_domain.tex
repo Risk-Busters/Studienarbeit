@@ -11,33 +11,69 @@ The survey was conducted among project managers in two big German IT companies. 
 
 We asked the PMs about their previous project experiences in terms of risk managment practice and risks encountered. We also included questions about the importance of different risk managment phases and the usefullness of tool support for them. Finally we gathered information about the platforms they used and on which they would want a risk managment tool. The full questionnaire can be found in the appendix.
 
-The majority of the PMs we surveyed did undertake risk managment efforts for their projects which they oversaw during the last year. Those who did not mostly cited project size as their reason, however some said they usually didn't do it and two even thought it not useful at all as can be seen in \ref{fig:label20} and \ref{fig:label21}. We take from that the PMs are generally aware and do undertake risk management efforts given sufficent project volume.
+The majority of the PMs we surveyed did undertake risk managment efforts for their projects which they oversaw during the last year. Those who did not mostly cited project size as their reason, however some said they usually didn't do it and two even thought it not useful at all as can be seen in FIG.\ref{fig:label20} and FIG.\ref{fig:label21}. We take from that the PMs are generally aware and do undertake risk management efforts given sufficent project volume.
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Assets/survey_results/Q1.png}
-	\caption{Survey question 1 results}
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q1.png}
+	\caption{Engagement in risk management}
 	\label{fig:label20}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Assets/survey_results/Q2.png}
-	\caption{Survey question 2 results}
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q2.png}
+	\caption{Reasons for no engagement}
 	\label{fig:label21}
 \end{figure}
 
-In accordance with the literature all participants who did undertake risk management made an initial commtiment to risk analysis but fewer reported to have to have engange in long term activities for risk monitoring and controlling as depicted in \ref{fig:label22}. Also when asked about the importance of the different phases the PMs placed a stronger emphasis on the initial phases. Knowing and understanding the risks seem to appear slightly more important than actually dealing with it over the course of the project (see \ref{fig:label23}).  We therefore believe it is necessary to re-engage the project members throughout the project lifetime so that the less practiced phases of risk management are not overlooked. As argued in the beginning all stages are relevant and should be supported by the software. 
+In accordance with the literature all participants who did undertake risk management made an initial commtiment to risk analysis but fewer reported to have to have engange in long term activities for risk monitoring and controlling as depicted in FIG.\ref{fig:label22}. Also when asked about the importance of the different phases the PMs placed a stronger emphasis on the initial phases. Knowing and understanding the risks seem to appear slightly more important than actually dealing with it over the course of the project (see FIG.\ref{fig:label23}).  We therefore believe it is necessary to re-engage the project members throughout the project lifetime so that the less practiced phases of risk management are not overlooked. As argued in the beginning all stages are relevant and should be supported by the software.
+ 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Assets/survey_results/Q3.png}
-	\caption{Survey question 2 results}
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q3.png}
+	\caption{Engagement across process stages}
 	\label{fig:label22}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Assets/survey_results/Q4.png}
-	\caption{Survey question 2 results}
-	\label{fig:label32}
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q4.png}
+	\caption{Importance of process stages}
+	\label{fig:label23}
 \end{figure}
+
+We also found that the project managers in general were open towards software support for risk management. Many had already used a tool for their efforts and those who didn't were mostly open to the idea (see FIG.\ref{fig:label24}). Some used specific risk management softwares whereas others had customized excel sheets. We thus assume that our chances to gain acceptance for our software are high as long as we provide a good user experience because the PMS are in general open to software support.
+
+\begin{figure}[H]
+	\centering
+	\subfigure{
+		\includegraphics[width=.45\textwidth]{Assets/survey_results/Q5.png}
+	}
+	\subfigure{
+		\includegraphics[width=.45\textwidth]{Assets/survey_results/Q6.png}
+	}
+	\caption{Willingness to use software for risk management efforts}
+	\label{fig:label24}
+\end{figure}
+
+We again find our conclusion supported that risk managment software can be especially useful for keeping efforts alive long-term with the next survey question. We specifically asked the PMS who were open for tool support which phase of the process would in their eyes benefit most from tool support\footnote{Unfortunately filtering issues occured at the second company for the last questions which is why not all participants who should have received the question can be reported.}. Monitoring and controlling is the most frequently picked option as FIG.\ref{fig:label25} shows. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q8.png}
+	\caption{Tool usefulness across process stages}
+	\label{fig:label25}
+\end{figure}
+
+Finally we asked the PMs on which platforms they would want to use a risk management tool on (see FIG.\ref{fig:label26}). Mainly they preferred desktop computers with different operating systems (MacOS, Windows and Linux were all mentioned). Roughly a third would also like to have a mobile solution, however. It is noteworth that all who picked mobile also chose desktop aswell. From this question we derive that our PWA approach is a good way to cover all usage preferences.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Assets/survey_results/Q7.png}
+	\caption{Grouped answers: Platform preference for tool usage}
+	\label{fig:label26}
+\end{figure}
+
+From these results we developed a basic clickable prototype of the software which can be found at: \underline{\href{https://norisknofun.invisionapp.com/prototype/NoRiskNoFunPreview-ck5aubx9g002w6o01rhyo61z3/play/40faaf12}{No Risk No Fun - Interactive Prototype}}. It is an initial sketch of how we intended to realize the above described conclusions in our software. We used the prototype to gain further feedback for refining our designs. This feedback can be found in the following section, the refined software specifications are described in \ref{sec:domainB}.
 
 \subsection{Interviews}
 \label{sec:DomainAb}
