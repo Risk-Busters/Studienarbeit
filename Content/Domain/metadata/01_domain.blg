@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[1] Config.pm:307> INFO - Logfile is 'metadata\01_domain.blg'
+[282] biber-MSWIN64:315> INFO - === 
+[1241] Utils.pm:316> ERROR - Cannot find '01_domain.bcf'!
+[1241] Biber.pm:114> INFO - ERRORS: 1
