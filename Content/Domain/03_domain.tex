@@ -14,7 +14,7 @@ Based on the Model-View-Controller (\ac{MVC}) architectural pattern the applicat
 
 In terms of the \ac{MVC} pattern, the view / frontend is a presentational layer accessible by the user – traditionally a user interface. The model is equivalent to the data of an application which can be persisted with any appropriate technology (e.g. a database). The data itself can be accessed, updated or deleted by the controller. Furthermore, the controller is in charge of the logic of the application \cite[p. 7]{steyerWebanwendungenMitASP2017}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Content/Domain/OverallComposition.png}
 	\caption{Overall Composition}
@@ -39,7 +39,7 @@ Even though components can pass their states in hierarchical order, having a cen
 
 Figure \ref{fig:reduxpattern} visually explains the Redux pattern.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Content/Domain/ReduxPattern.png}
 	\caption{Redux Pattern}
@@ -63,7 +63,7 @@ All of them are used in the risk management application for the following purpos
 
 Figure \ref{fig:backenddetails} clarifies the functional interaction between all Spring Boot starter modules. In the case of the risk management application requests to \ac{REST} endpoints, implemented with features provided by the Starter-Web module, are performed by Redux actions (see chapter \ref{sec:DomainCb}). If the controller behind the \ac{REST} endpoint has restrictions to specific roles, specified with the help of the Starter-Security module, the roles are gathered from the user by the credentials which are sent with the request and if they match, the logic of the controller gets executed. In this example data should be retrieved which can be the gathered with the help of the object oriented JPA included in the Starter-Data-\ac{JPA} module and then be returned to the frontend and be used for further purposes. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Content/Domain/BackendDetails.png}
 	\caption{Functional interaction of Spring Boot starter modules}
