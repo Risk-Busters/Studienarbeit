@@ -1,0 +1,16 @@
+%%%--------------------------------%%%
+%%% Implementation
+%%%--------------------------------%%%
+
+\section{Design Approach}
+\label{sec:implementationDesign}
+
+As probably seen in the previous sections, the application makes use of analogous colors, so colors that are similar to each other. The authors decided to choose green- and blueish colors as they appeared to be calming towards the application users attitude which could be helpful when discussing problematic risks.
+
+Besides the similar looking colors, the application is build with reusable atomic third-party components like buttons or form fields. The aftermath on one hand is the accelerated development of the application due to the ready-made components, but on the other hand the simplification in terms of usability as the users can be sure that the components will look and behave the same way in every part of the application.
+
+On top of that, due to the surveys feedback, the application was development with multiple platforms in mind (TODO XXX). Those polled would like to use the application on mobile and desktop devices which is why the approach of a PWA (TODO XXX) was respected. The result is that the application now fulfills various criteria of a PWA. It is progressive and re-engagable by using notifications when wanted (TODO XXX), some parts are network independent and cache the servers result, HTTPS is already used in development and due to a provided service worker and manifest the application is discoverable, installable and linkable. Figure TODO XXX shows the activity stream on desktop and mobile to demonstrate the responsiveness which is also a criteria of a PWA.
+
+TODO: Screenshot Activity Stream Desktop and Mobile
+
+In the future, the application could be improved by providing a more comprehensive caching of server results and better responsiveness in various parts of the application.
