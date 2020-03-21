@@ -5,4 +5,21 @@
 \section{Risk Use Cases}
 \label{sec:implementationRisks}
 
-TODO
+In this section, the implementation of all remaining risk use cases will be demonstrated.
+
+Due to the coherence between most of the risk use cases, they will be demonstrated by one larger example. First of all, the Risk CRUD (TODO XXX) which includes the creation and editing of a risk. When opening the detailed view of a project, the user will be able to propose a risk by providing a title and a more detailed description. After proposing, every project member has the chance to like this proposed risk and after reaching a specific amount of likes, the risk will then be discussable. All of this is additionally part of the Risk Discussion use case (TODO XXX), but is missing the ability to provide negative textual feedback. Figure TODO XXX shows a proposed risk with two likes.
+
+TODO: Proposed Risk with 2 likes.
+
+
+The risk will now be displayed beneath the "Discuss" tab within the detailed project view from where users are able to provide an estimation as seen in figure TODO XXX.
+
+TODO: Screenshot Disucssion window
+
+After providing enough estimations, a median will be calculated and the project risk is ready to be finalized. In this step, one user has to assign the risks to themselves for what rewards will be distributed (TODO XXX) and multiple responses have to be defined. The latter is part of the Risk Response Management use case (XXX).
+
+TODO: Screenshot finalization
+
+If the mentioned steps have been fulfilled, the risk will be final and be displayed beneath the "Final" tab which opens automatically when opening the detailed project view.
+
+To conclude, the Risk- and Risk Response Management are fully implemented, as well as the Risk Discussions in the broadest sense. Missing from the MVP is the ability to monitor risks with the help of notifications and a due date as described in the corresponding use case (TODO XXX). Prioritizing risks is also not possible yet but could be implemented like use case Project Risk Adjustment depicts (TODO XXX). Also not part of the MVP is the Risk Pool (chapter XXX) as currently a risk can’t leave its project and be published in a pool.

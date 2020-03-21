@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.21)  21 MAR 2020 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.21)  21 MAR 2020 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2891,18 +2891,18 @@ chapter 4.
 Package acronym Info: Label `acro:MVP' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
 (./Content/Implementation/01_implementation.tex)
-(./Content/Implementation/02_implementation.tex)
-(./Content/Implementation/03_implementation.tex [91
+(./Content/Implementation/02_implementation.tex [91
 
 ])
-(./Content/Implementation/04_implementation.tex [92]))
-(./Content/Discussion/Discussion.tex [93]
+(./Content/Implementation/03_implementation.tex [92])
+(./Content/Implementation/04_implementation.tex))
+(./Content/Discussion/Discussion.tex [93] [94]
 chapter 5.
-) (./Content/ConclusionOutlook/ConclusionOutlook.tex [94
+) (./Content/ConclusionOutlook/ConclusionOutlook.tex [95
 
 ]
 chapter 6.
-) [95
+) [96
 
 ]
 
@@ -2962,8 +2962,8 @@ Package logreq Info: Writing requests to 'ResearchProject.run.xml'.
 ### semi simple group (level 1) entered at line 26 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32333 strings out of 492609
- 554356 string characters out of 6131462
+ 32334 strings out of 492609
+ 554363 string characters out of 6131462
  1218313 words of memory out of 5000000
  34241 multiletter control sequences out of 15000+600000
  71627 words of font info for 214 fonts, out of 8000000 for 9000
@@ -2976,10 +2976,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on ResearchProject.pdf (109 pages, 2931407 bytes).
+Output written on ResearchProject.pdf (110 pages, 2933454 bytes).
 PDF statistics:
- 1492 PDF objects out of 1728 (max. 8388607)
- 1278 compressed objects within 13 object streams
- 462 named destinations out of 1000 (max. 500000)
+ 1498 PDF objects out of 1728 (max. 8388607)
+ 1283 compressed objects within 13 object streams
+ 463 named destinations out of 1000 (max. 500000)
  47727 words of extra memory for PDF output out of 51595 (max. 10000000)
 

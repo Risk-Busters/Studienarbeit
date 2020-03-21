@@ -143,15 +143,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}General Infrastructure}{91}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Risk Use Cases}{92}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Risk Use Cases}{91}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Gamification Elements}{92}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Design Approach}{92}{section.4.4}% 
+\contentsline {section}{\numberline {4.4}Design Approach}{93}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{94}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Discussion}{95}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{95}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{96}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix}{VII}{section*.170}% 
 \defcounter {refsection}{0}\relax 
