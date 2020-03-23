@@ -57,7 +57,7 @@ All of them are used in the risk management application for the following purpos
 
 \begin{itemize}
 	\item \textbf{Starter-Web}: This starter modules includes the Spring \ac{MVC} Java web framework providing support for the \ac{MVC} pattern and \ac{REST} \ac{API}s. For example, a Java class can be annotated as controller and methods within define what kind of \ac{HTTP} methods are allowed as well as the \ac{REST} endpoint the controller can be addressed at \cite[p. 107-109]{prasadreddyBeginningSpringBoot2017}. 
-	\item \textbf{Starter-Data-\ac{JPA}}: The Starter-Data-JPA module allows developers to access databases in their Spring Boot application without writing \ac{SQL} statements. Instead an object oriented \ac{API} can be used and thus developers don’t have to switch between different languages. An important part of this module is Hibernate, a technology which can map Java objects to a database. Hence the whole model of the application can be realized as Java classes and the technologies in this starter module take care of the persistence to a database \cite[p. 83]{prasadreddyBeginningSpringBoot2017}. 
+	\item \textbf{Starter-Data-\ac{JPA}}: The Starter-Data-JPA module allows developers to access databases in their Spring Boot application without writing \acs{SQL} statements. Instead an object oriented \ac{API} can be used and thus developers don’t have to switch between different languages. An important part of this module is Hibernate, a technology which can map Java objects to a database. Hence the whole model of the application can be realized as Java classes and the technologies in this starter module take care of the persistence to a database \cite[p. 83]{prasadreddyBeginningSpringBoot2017}. 
 	\item \textbf{Starter-Security}: As not everyone should be able to access the same information or perform the same actions via the controllers (e.g. project related risks, deleting projects) the Starter-Security module enables security features such as authentication against the \ac{REST} endpoints or user specific roles like being an average user or application admin \cite[p. 176-176]{prasadreddyBeginningSpringBoot2017}. 
 \end{itemize}
 
@@ -74,9 +74,7 @@ Figure \ref{fig:backenddetails} clarifies the functional interaction between all
 \subsection{Persistence / Database}
 \label{sec:DomainCd}
 
-For persistence a relational PostgreSQL (Version 9.5, 20/11/2019) database is used and can be accessed by the backend. 
+For persistence a relational Postgre \acs{SQL} (Version 9.5, 20/11/2019) database is used and can be accessed by the backend. 
 
 The creation of necessary tables and relations is being done automatically by the technologies within the Starter-Data-\ac{JPA} module. For further information about the Starter-Data-\ac{JPA} module see chapter \ref{sec:DomainCc}.
-
-TODO: Add whole project UML here someday?
 
