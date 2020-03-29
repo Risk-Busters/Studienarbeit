@@ -7,6 +7,12 @@
 \subsubsection{Use Case Specification: \ac{UC}3 Risk CRUD}
 \label{sec:domainBbd}
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth,right]{Assets/UC_Screenshots/UC3S.png}
+	\caption{Use Case 3: Mock Prototype}
+	\label{fig:useCase3Detail}
+\end{wrapfigure}
+
 \paragraph*{Description}\mbox{}\\
 This use case allows users to create, read, update and delete risks. 
 A risk consists of the following fields:
@@ -28,16 +34,6 @@ Following fields are filled later and are not part of the input form:
 	\item public risk (boolean)
 \end{itemize}
 
-\paragraph*{Screenshots}\mbox{}\\
-tbd: Insert screenshots and shortly explain what can be seen
-\begin{figure}[h] 
-	\centering
-	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
-	\caption{\ac{UC}3 Risk CRUD: TODO}
-	\label{fig:label3}
-\end{figure}
-
-\newpage
 \paragraph*{Basic Flow} \mbox{}\\
 \noindent
 Creating a risk:
@@ -82,7 +78,6 @@ Deleting a risk:
 	\item By clicking a "Delete" button the risk is deleted. This behavior is changed in UC6 Risk Discussion described in chapter \ref{sec:domainBbg}.
 \end{itemize}
 
-\newpage
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]
 	\centering
@@ -90,9 +85,6 @@ Deleting a risk:
 	\caption{Activity Diagram \ac{UC}3 Risk CRUD}
 	\label{fig:activityDiagramUC3}
 \end{figure}
-
-\paragraph*{Alternative Flows}\mbox{}\\
-n/a
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
 The preconditions for this use case are:
