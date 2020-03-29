@@ -6,6 +6,11 @@
 % UC11 ====================================================
 \subsubsection{Use Case Specification: \ac{UC}11 Progress Indicator}
 \label{sec:domainBbl}
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth]{Assets/UC_Screenshots/UC11S.png}
+	\caption{Use Case 11: Mock Prototype}
+	\label{fig:useCase11Detail}
+\end{wrapfigure}
 
 \paragraph*{Description}\mbox{}\\
 This \ac{UC} deals with the user's journey through the application. 
@@ -20,16 +25,7 @@ It can be divided into three phases:
 \end{enumerate}
 \noindent
 The \ac{UC}'s aim is to adapt the application to the different needs of the user in each phase.
-
-\paragraph*{Screenshots}\mbox{}\\
-tbd: Insert screenshots and shortly explain what can be seen
-\begin{figure}[h] 
-	\centering
-	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
-	\caption{Use Case X: Detail}
-	\label{fig:label8}
-\end{figure}
-
+\\
 \paragraph*{Basic Flow} \mbox{}\\
 
 \begin{enumerate}
@@ -57,14 +53,12 @@ tbd: Insert screenshots and shortly explain what can be seen
 	\item Progress
 	\begin{itemize}
 		\vspace{-3mm}
-		\setlength\itemsep{-1em}
-		
-		
+		\setlength\itemsep{-1em}	
 		\item The reached badges are displayed prominently at the start page and on the user detail page. The conception of badges in detail is described in TODO: ref auf gamification conception \ref{TODO}.
 		\item The user is rewarded for desired behavior by points, which represent an activity indicator for each user. This is visualized for the user by a chart of reached points over time.
 	\end{itemize}
 \end{enumerate}
-
+\newpage
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]
 	\centering
@@ -73,13 +67,8 @@ tbd: Insert screenshots and shortly explain what can be seen
 	\label{fig:label12}
 \end{figure}
 
-\paragraph*{Alternative Flows}\mbox{}\\
-N/A
-
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
 As a precondition the user has to create an account and login for the first time. 
 
 \paragraph*{Postconditions and Persistance}\mbox{}\\
 The user was accompanied from beginner to an expert user. Therefore as a postcondition the user is advanced in using the application.
-
-\newpage

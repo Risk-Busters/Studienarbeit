@@ -6,18 +6,14 @@
 \subsubsection{Use Case Specification: \ac{UC}4 Project risk adjustment}
 \label{sec:domainBbe}
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth]{Assets/UC_Screenshots/UC4S.png}
+	\caption{Use Case 4: Mock Prototype}
+	\label{fig:useCase4Detail}
+\end{wrapfigure}
+
 \paragraph*{Description}\mbox{}\\
 After a risk has been submitted and evaluated by the team it is grouped into three categories. However, within these categories the initial order is simply that the risks submitted first will be placed at the top. This use case allows the teams to prioritize risks according to their perceived risk urgency. On the project risk overview page the after the initial risk evaluation users will find a button they can use to adjust the ranking. They will then enter adjustment mode where they can arrange the risks according to their perceived urgency and submit their ranking. Then they will return to the overview where the risks will be displayed according to their average relative ranking positions. The adjust button will be disabled until new risks are added to prevent manipulation. The user will be notified that they cannot rank multiple times when they first go through the adjustment process. 
-
-\paragraph*{Screenshots}\mbox{}\\
-tbd: Insert screenshots and shortly explain what can be seen
-
-\begin{figure}[h] 
-	\centering
-	\includegraphics[width=0.1\textwidth]{Content/Domain/placeholder.png}
-	\caption{Use Case X: Detail}
-	\label{fig:label4}
-\end{figure}
 
 \paragraph*{Basic Flow} \mbox{}\\
 \begin{itemize}
@@ -31,7 +27,7 @@ tbd: Insert screenshots and shortly explain what can be seen
 	\item The risks on the risk overview page are displayed accordingly.
 	\item The adjust button is disabled for users who have already submitted a ranking.
 \end{itemize}
-
+\newpage
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]
 	\centering
@@ -39,9 +35,8 @@ tbd: Insert screenshots and shortly explain what can be seen
 	\caption{Activity Diagram Use Case 4}
 	\label{fig:label44}
 \end{figure}
-
+\newpage
 \paragraph*{Alternative Flows}\mbox{}\\
-
 The following steps will be added if the user enters the ranking process for the first time or has not participated in a ranking process for a prolonged period of time:
 \begin{itemize}
 	\vspace{-3mm}
