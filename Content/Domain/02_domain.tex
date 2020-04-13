@@ -49,7 +49,7 @@ This project is being developed as a student research project and part of the au
 For the application to be usable on desktop and mobile device we use responsive design. We also aim for intuitive design using known symbols and functionalities to ensure user comfort. We adhere to design guidelines and we used a mock-up prototype to receive early user feedback.
 \paragraph*{Reliability}
 \label{sec:domainBcb}
-We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the repective company's control. Therefore in terms of reliabilty we aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state of the art technology such as React with Redux, Spring Boot and a Postgre SQL database.
+We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the repective company's control. Therefore in terms of reliabilty we aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state of the art technology such as React with Redux, Spring Boot and a Postgre \acs{SQL} database.
 \paragraph*{Performance}
 \label{sec:domainBcc}
 To make our application fast and scalable we use RESTful apis. Our front end is designed as a single page application for faster in-app performance. For future development this also offers the option to develop offline functionalities. Our back end uses a container based approach using docker and docker compose.
@@ -59,8 +59,7 @@ We use sonar to ensure code quality for future maintance and expandability. We w
 
 \subsection{Design Constraints}
 \label{sec:domainBd}
-The software is designed as a web application so internet access will be required. As a PWA the application can support offline functionality however that will not be implemented within the scope of this project. Due to the chosen technology we also cannot guarantee all features to be available for every webbrowser, howver the application is designed to provide the core functionalities even without additional PWA features.
-
+The software is designed as a web application so internet access will be required. As a  \acs{PWA} the application can support offline functionality however that will not be implemented within the scope of this project. Due to the chosen technology we also cannot guarantee all features to be available for every webbrowser, howver the application is designed to provide the core functionalities even without additional  \acs{PWA} features.
 
 \subsection{Interfaces}
 \label{sec:domainBe}
@@ -71,5 +70,5 @@ The application will start on the home screen. After registration and login the 
 When adding new risks users can open the risk pool to view all pool risks available to the company.
 \subsubsection{Further Interfaces}
 \label{sec:domainBeb}
-Since our PWA is supposed to be re-engaging we use push notification to enhance user commitment. To do so we use Google's Firebase Cloud Messaging. Documentation for Firebase can be found at \href{https://firebase.google.com/docs/cloud-messaging}{https://firebase.google.com/docs/cloud-messaging}.
+Since our  \acs{PWA} is supposed to be re-engaging we use push notification to enhance user commitment. To do so we use Google's Firebase Cloud Messaging. Documentation for Firebase can be found at \href{https://firebase.google.com/docs/cloud-messaging}{https://firebase.google.com/docs/cloud-messaging}.
 

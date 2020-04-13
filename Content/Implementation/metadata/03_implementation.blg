@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[0] Config.pm:307> INFO - Logfile is 'metadata\03_implementation.blg'
+[54] biber-MSWIN64:315> INFO - === 
+[641] Utils.pm:316> ERROR - Cannot find '03_implementation.bcf'!
+[641] Biber.pm:114> INFO - ERRORS: 1

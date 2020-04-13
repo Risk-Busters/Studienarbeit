@@ -4,6 +4,7 @@
 
 \section{Architecture}
 \label{sec:DomainC}
+\spacing{1.5}
 
 In this chapter the used architectural patterns, technologies, frameworks and libraries are briefly explained. First, an overall composition is given whose individual layers will then be explicitly described.
 
@@ -14,7 +15,7 @@ Based on the Model-View-Controller (\ac{MVC}) architectural pattern the applicat
 
 In terms of the \ac{MVC} pattern, the view / frontend is a presentational layer accessible by the user – traditionally a user interface. The model is equivalent to the data of an application which can be persisted with any appropriate technology (e.g. a database). The data itself can be accessed, updated or deleted by the controller. Furthermore, the controller is in charge of the logic of the application \cite[p. 7]{steyerWebanwendungenMitASP2017}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Content/Domain/OverallComposition.png}
 	\caption{Overall Composition}
@@ -39,7 +40,7 @@ Even though components can pass their states in hierarchical order, having a cen
 
 Figure \ref{fig:reduxpattern} visually explains the Redux pattern.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Content/Domain/ReduxPattern.png}
 	\caption{Redux Pattern}
@@ -57,13 +58,13 @@ All of them are used in the risk management application for the following purpos
 
 \begin{itemize}
 	\item \textbf{Starter-Web}: This starter modules includes the Spring \ac{MVC} Java web framework providing support for the \ac{MVC} pattern and \ac{REST} \ac{API}s. For example, a Java class can be annotated as controller and methods within define what kind of \ac{HTTP} methods are allowed as well as the \ac{REST} endpoint the controller can be addressed at \cite[p. 107-109]{prasadreddyBeginningSpringBoot2017}. 
-	\item \textbf{Starter-Data-\ac{JPA}}: The Starter-Data-JPA module allows developers to access databases in their Spring Boot application without writing \ac{SQL} statements. Instead an object oriented \ac{API} can be used and thus developers don’t have to switch between different languages. An important part of this module is Hibernate, a technology which can map Java objects to a database. Hence the whole model of the application can be realized as Java classes and the technologies in this starter module take care of the persistence to a database \cite[p. 83]{prasadreddyBeginningSpringBoot2017}. 
+	\item \textbf{Starter-Data-\ac{JPA}}: The Starter-Data-JPA module allows developers to access databases in their Spring Boot application without writing \acs{SQL} statements. Instead an object oriented \ac{API} can be used and thus developers don’t have to switch between different languages. An important part of this module is Hibernate, a technology which can map Java objects to a database. Hence the whole model of the application can be realized as Java classes and the technologies in this starter module take care of the persistence to a database \cite[p. 83]{prasadreddyBeginningSpringBoot2017}. 
 	\item \textbf{Starter-Security}: As not everyone should be able to access the same information or perform the same actions via the controllers (e.g. project related risks, deleting projects) the Starter-Security module enables security features such as authentication against the \ac{REST} endpoints or user specific roles like being an average user or application admin \cite[p. 176-176]{prasadreddyBeginningSpringBoot2017}. 
 \end{itemize}
 
 Figure \ref{fig:backenddetails} clarifies the functional interaction between all Spring Boot starter modules. In the case of the risk management application requests to \ac{REST} endpoints, implemented with features provided by the Starter-Web module, are performed by Redux actions (see chapter \ref{sec:DomainCb}). If the controller behind the \ac{REST} endpoint has restrictions to specific roles, specified with the help of the Starter-Security module, the roles are gathered from the user by the credentials which are sent with the request and if they match, the logic of the controller gets executed. In this example data should be retrieved which can be the gathered with the help of the object oriented JPA included in the Starter-Data-\ac{JPA} module and then be returned to the frontend and be used for further purposes. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Content/Domain/BackendDetails.png}
 	\caption{Functional interaction of Spring Boot starter modules}
@@ -74,9 +75,7 @@ Figure \ref{fig:backenddetails} clarifies the functional interaction between all
 \subsection{Persistence / Database}
 \label{sec:DomainCd}
 
-For persistence a relational PostgreSQL (Version 9.5, 20/11/2019) database is used and can be accessed by the backend. 
+For persistence a relational Postgre \acs{SQL} (Version 9.5, 20/11/2019) database is used and can be accessed by the backend. 
 
 The creation of necessary tables and relations is being done automatically by the technologies within the Starter-Data-\ac{JPA} module. For further information about the Starter-Data-\ac{JPA} module see chapter \ref{sec:DomainCc}.
-
-TODO: Add whole project UML here someday?
 
