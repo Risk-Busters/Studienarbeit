@@ -7,19 +7,17 @@
 \subsubsection{Use Case Specification: \ac{UC}5 Risk Pool}
 \label{sec:domainBbf}
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth]{Assets/UC_Screenshots/UC5S.png}
+	\caption{Use Case 5: Mock Prototype}
+	\label{fig:useCase5Detail}
+\end{wrapfigure}
+
+
 \paragraph*{Description}\mbox{}\\
 The risk pool serves to share knowledge among different teams and to store experiences. Users can vote for project risks to be added to the risk pool. After a certain quorum is reached the risk will be moved to the risk pool and will be persisted together with its responses there. Whenever a new risk is created the user will then have the option to check the pool risks if their risk is already present. They can then add a reference to the pool risks to their project risks. Pool risk can already have responses attached to them and will display the average occurrence probability and impact severity estimates of their project references giving an indication of how other teams evaluated the risk. The individual project risk evaluation process will still be undertaken for pool risks. \\
 To remove risks from the risk pool a user will have to request a voting process on the pool risk. They can choose to either have the risk deleted (because it is outdated for example) or to merge it with another risk. All users will then be notified that a pool risk is up for discussion and will be invited to vote. If the vote is favorable the risk will be deleted and in case of a merge request its responses and references will be moved to the merge risk. \\
 Quorums can be adjusted by project managers however there will be a notification that the change affects all teams and other project managers will receive a notification should a quorum be changed. 
-
-\paragraph*{Screenshots}\mbox{}\\
-Insert screenshots and shortly explain what can be seen
-\begin{figure}[h] 
-	\centering
-	\includegraphics[width=0.8\textwidth]{Content/Domain/UC5RiskPoolDiagram.png}
-	\caption{Use Case X: Detail}
-	\label{fig:label5}
-\end{figure}
 
 \paragraph*{Basic Flow} \mbox{}\\
 Add flow:
@@ -57,8 +55,8 @@ Duplicate flow:
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Content/Domain/placeholder.png}
-	\caption{Activity Diagram Use Case X}
+	\includegraphics[width=0.8\textwidth]{Content/Domain/UC5RiskPoolDiagram.png}
+	\caption{Activity Diagram Use Case 5}
 	\label{fig:label55}
 \end{figure}
 
