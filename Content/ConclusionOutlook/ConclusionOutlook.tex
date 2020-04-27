@@ -7,16 +7,23 @@
 %%%--------------------------------%%%
 %%% ConclusionOutlook N
 %%%--------------------------------%%%
-\foreach \i in {01,02,03,04,05,06,07,08,09,10,...,99} {%
-	\edef\FileName{Content/ConclusionOutlook/\i_conclusionoutlook}%
-	\IfFileExists{\FileName}{%
-		\input{\FileName}
-	}
-	{%
-		% File does not exist
-		
-	}
-}%foreach
+For this paper we have evaluated the state of the literature on risk management practices and principles to conclude necessary features of a software aimed at improving and facilitating project risk management processes. Besides general requirement such as a correct and wholesome coverage of risk management cycles and software usability criteria we have identified two main aspects which are scarcely addressed so far. One of them is knowledge persistence, the other is engagement. In our first conception for the application we have addressed both of them by using a shared knowledge pool and gamification respectively.
+
+We have then proceeded to validate this approach by surveying 28 project managers from two German IT companies. We found general support for our assumptions due to the result that the PMs valued risk identification – which is facilitated when knowledge about similar projects and experiences is shared – and wished for software support with risk monitoring – wish is a long term undertaking that needs repeated effort which can be supported with gamification elements. These results were further supported by three interviews we conducted presenting a clickable prototype to PMs who agreed to further support us. The gamification as well as the pool function were explicitly mentioned as helpful by the PMs. However, it is important to keep in mind that the sample size was small and due to limited access to the PMs these results are not generalizable and require further more extensive research for solidification. For future research it may also be advisable to extend the sample to non-IT companies as to include less technically affine project managers and also to discern whether non-IT projects have different characteristics.
+Based on the feedback we received from the PMs we went on to what we consider the main contribution of this paper: the specification of a software approach to facilitate and support risk management efforts in project aimed at continuous engagement, cooperative effort and knowledge sharing. We divided our tool in three main areas (\ref{sec:domainBb}): 
+
+-	General Infrastructure: The CRUD use cases lying beneath application area of our tool, including knowledge persistence 
+-	Risk Management: Specific functionalities which are necessary for handling risk management processes according to standards as described in the literature
+-	Gamification: Use cases aimed at motivation and commitment
+
+We suggest for all of this to be integrated into a Progressive Web App because this satisfies the need of project managers to flexibly handle their tasks from desktop or mobile devices (as reported in (\ref{sec:DomainAa})) and also facilitates engagement aspects since re-engagement is a defining characteristic of PWA.
+
+We furthermore went on to the practical application of our results in form of a Minimum Viable Product (MVP) realizing core elements of the design. The results can be found at
+\underline{\href{https://github.com/Risk-Busters/NoRiskNoFun}{No Risk No Fun - Github repository}}. For a detailed description of which features are included and for which reason refer to (\ref{sec:implementationInfra}).
+The next steps in the actual development of the software would be to use the MVP for gaining further user feedback and refining the approach taken so far. Due to time constraints this was not possible within the scope of this project, however it due to the scarce evidence that could gathered initially it is a necessary step.
+Another advisable proceeding would be to invest more time into data collection as to be able to include some initial risk management knowledge into the tool which can assist project teams in their initial risk identification efforts and aid risk estimation processes. Ideally such information could be gathered by requesting companies to provide experiences. However, it might be difficult to attain such cooperation at the desired level of detail given the sensitive nature of the subject.
+
+To conclude we can summarize our project as having laid the foundations for a new approach towards improving project risk management efforts with software support by introducing gamification as a motivational factor. Further research and expansion on the subject, however, is necessary. Especially there would have to be a final evaluation exploring the impact of our gamification approach with empirical measures to ascertain its effectiveness or lack thereof.
 
 
 
