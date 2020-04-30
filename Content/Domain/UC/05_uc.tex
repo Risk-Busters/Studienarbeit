@@ -27,7 +27,7 @@ Add flow:
 	\item A user clicks on the "nominate for risk pool" button on a project risk's detail page.
 	\item Other users on the project team will be notified that a risk has been nominated.
 	\item The nomination button will be replaced by a support button for these users.
-	\item Once a pre-defined quorum of users has supported the nomination the risk will be moved to the risk pool and the project risk will become a reference to the pool risk.
+	\item Once a pre-defined quorum of users has supported the nomination, the risk will be moved to the risk pool and the project risk will become a reference to the pool risk.
 \end{itemize}
 
 Remove flow:
@@ -37,7 +37,7 @@ Remove flow:
 	\item A user nominates a pool risk for being removed on the pool risk's detail page.
 	\item All users who are part of a project that references the pool risks will be notified.
 	\item The nomination button will be replaced by a support button for those users.
-	\item If a pre-defined quorum of users supports the nomination the project references will be turned into copies of the original risk and the copies risk will be removed from the risk pool.
+	\item If a pre-defined quorum of users supports the nomination the project references will be turned into copies of the original risk and the original risk will be removed from the risk pool, while the copies remain as project risks for the individual projects.
 \end{itemize}
 
 Duplicate flow:
@@ -51,14 +51,6 @@ Duplicate flow:
 	\item If a pre-defined quorum of users confirms the duplication the risks will be merged.
 	\item All references of the second risks will be redirected to the first, the response list will be merged and the duplicate will be deleted.
 \end{itemize}
-
-\subparagraph{Activity Diagram}\mbox{}\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Content/Domain/UC5RiskPoolDiagram.png}
-	\caption{Activity Diagram Use Case 5}
-	\label{fig:label55}
-\end{figure}
 
 \paragraph*{Alternative Flows}\mbox{}\\
 The last steps of the above described flows will change if the quorum is not met within a pre-defined timeframe.
@@ -80,5 +72,13 @@ This use case has the following preconditions:
 	\item There are two similar risks in the risk pool.
 \end{enumerate}
 
-\paragraph*{Postconditions and Persistance}\mbox{}\\
-The changes are instantly reflected in the database. Once the changes are confirmed corresponding PUT and DELETE requests update the database.
+\paragraph*{Postconditions and Persistence}\mbox{}\\
+The changes are instantly reflected in the database. The voting process is tracked there. Once the changes are confirmed corresponding updates in the database will be triggered by the backend.
+\newpage
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Content/Domain/UC5RiskPoolDiagram.png}
+	\caption{Activity Diagram Use Case 5}
+	\label{fig:label55}
+\end{figure}

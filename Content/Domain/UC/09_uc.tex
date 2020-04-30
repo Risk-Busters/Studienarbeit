@@ -8,36 +8,27 @@
 \label{sec:domainBbj}
 
 \paragraph*{Description}\mbox{}\\
-To begin with the risk management process inital risk contributions are needed. Therefore a project is initialized with a starting challenge. The project manager sets an initial number of risks to be contributed, a deadline for them and a minimum number of supporters for a risk to be accepted into the discussion, as well as a deadline for the initial discussion process.
+To begin with the risk management process initial risk contributions are needed. Therefore a project is initialized with a starting challenge. The project manager sets an initial number of risks to be contributed, a deadline for them and a minimum number of supporters for a risk to be accepted into the discussion, as well as a deadline for the initial discussion process.
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+	\includegraphics[width=0.3\textwidth]{Assets/UC_Screenshots/UC9S.png}
+	\caption{Use Case 9: Mock Prototype}
+	\label{fig:useCase9Detail}
+\end{wrapfigure}
 
 \paragraph*{Basic Flow} \mbox{}\\
 
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The project manager opens an unitialized project.
-	\item They enter the above described paramters.
+	\item The project manager opens an uninitialized project.
+	\item They enter the above described parameters.
 	\item They press the initialize button.
 	\item All project members are notified.
 \end{itemize} 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\textwidth]{Assets/UC_Screenshots/UC9S.png}
-	\caption{Use Case 9: Mock Prototype}
-	\label{fig:useCase9Detail}
-\end{figure}
-\newpage
-\subparagraph{Activity Diagram}\mbox{}\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\textwidth]{Content/Domain/UC9Initialization.png}
-	\caption{Activity Diagram  \ac{UC}9 Project Initialization}
-	\label{fig:label14}
-\end{figure}
-\newpage
 \paragraph*{Alternative Flows}\mbox{}\\
-The initalization is canceled.
+The initialization is cancelled.
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
 \begin{enumerate}
@@ -47,7 +38,16 @@ The initalization is canceled.
 	\item The project manager has already created a new project.
 \end{enumerate}
 
-\paragraph*{Postconditions and Persistance}\mbox{}\\
+\paragraph*{Postconditions and Persistence}\mbox{}\\
 The project will only be accessible and contain all its other described functions after being initialized.
+
+\newpage
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{Content/Domain/UC9Initialization.png}
+	\caption{Activity Diagram  \ac{UC}9 Project Initialization}
+	\label{fig:label14}
+\end{figure}
 
 

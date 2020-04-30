@@ -26,10 +26,9 @@ Following fields are filled later and are not part of the input form:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item probability of occurence (Enum)
+	\item probability of occurrence (Enum)
 	\item impact (Enum)
-	\item risk factor (Enum)
-	\item response (Objects)  
+	\item response (Object)  
 	\item person in charge (User)
 	\item public risk (boolean)
 \end{itemize}
@@ -40,7 +39,7 @@ Creating a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item  When the user clicks the "+" button at the project overview page.
+	\item  When the user clicks the "+" button at the project detail page.
 	\item Then the screen for adding a new risk is opened.
 	\item When the risk form is filled by the user.
 	\item And the user clicks on the "Propose risk" button.
@@ -52,7 +51,7 @@ Reading a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The user is on the project overview site with all project risks.
+	\item The user is on the project detail site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
 	\item For exiting the risk detail view a return button ("Close" button) is clicked.
 \end{itemize}
@@ -62,10 +61,10 @@ Updating a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The user is on the project overview site with all project risks.
+	\item The user is on the project detail site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
 	\item On the detail view there is a pen button, enabling editing and changing the "Close" button to a "Save" button.
-	\item When clicking the "Save" button the changes are syncronized with the server.
+	\item When clicking the "Save" button the changes are synchronized with the server.
 \end{itemize} 
 
 \noindent
@@ -73,18 +72,10 @@ Deleting a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The user is on the project overview site with all project risks.
+	\item The user is on the project detail site with all project risks.
 	\item By clicking on a risk a detail risk view is opened.
-	\item By clicking a "Delete" button the risk is deleted. This behavior is changed in UC6 Risk Discussion described in chapter \ref{sec:domainBbg}.
+	\item By clicking a "Delete" button the risk is deleted. This behavior is modified by UC6 Risk Discussion described in chapter \ref{sec:domainBbg}.
 \end{itemize}
-
-\subparagraph{Activity Diagram}\mbox{}\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{Content/Domain/UC3RiskCRUDactivitydiagram.png}
-	\caption{Activity Diagram \ac{UC}3 Risk CRUD}
-	\label{fig:activityDiagramUC3}
-\end{figure}
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
 The preconditions for this use case are:
@@ -101,7 +92,7 @@ The postconditions for this use case are:
 \begin{enumerate}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item The risk is immediately part of the projects risk table (this behavior is changed within UC6 Risk Discussion described in chapter \ref{sec:domainBbg}).
+	\item The risk is immediately part of the projects risk table (this behavior is modified by UC6 Risk Discussion described in chapter \ref{sec:domainBbg}).
 \end{enumerate}
 
 \noindent
@@ -109,3 +100,11 @@ The persistence guidelines are:
 \newline
 \noindent
 The risk form was completely or partly filled by the user. When the user tries to leave the page now, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
+
+\subparagraph{Activity Diagram}\mbox{}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Content/Domain/UC3RiskCRUDactivitydiagram.png}
+	\caption{Activity Diagram \ac{UC}3 Risk CRUD}
+	\label{fig:activityDiagramUC3}
+\end{figure}

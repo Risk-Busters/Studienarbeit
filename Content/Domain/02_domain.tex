@@ -7,8 +7,8 @@
 
 \subsection{Purpose and Scope}
 \label{sec:domainBa}
-There are risk management tools on the market to support project managers in their risk management activities. Some tools have a similar focus to this work \cite{OperationalRiskManagement}, \cite{RiskManagementSoftware} others are oriented towards company risk managment \cite{QHSERiskCompliance} wheareas again others are project management tools with a risk managment section \cite{https://www.ntaskmanager.com/}. Those programs contain similar features as discussed in \ref{sec:theorieAc} and \ref{sec:theorieAc}. They do not cover user engagement however. To prevent negligence in the course of project life we want to add gamification elements as discussed in \ref{sec:TBD} to incorporate not only process support but to also consider the human factor.
-We want to develop a flexible application prototype to support project managers and their teams with their risk management activities. The app should cover all four phases of the risk management process, it should be able to learn with the teams’ experiences and it should be engaging.
+There are risk management tools on the market to support project managers in their risk management activities. Some tools have a similar focus to this work \cite{OperationalRiskManagement}, \cite{RiskManagementSoftware} others are oriented towards company risk management \cite{QHSERiskCompliance} whereas again others are project management tools with a risk management section \cite{https://www.ntaskmanager.com/}. Those programs contain similar features as discussed in \ref{sec:theoryAc} and \ref{sec:theoryAd}. They do not cover user engagement however. To prevent negligence in the course of project life we want to add gamification elements as discussed in \ref{sec:domainC} to incorporate not only process support but to also consider the human factor.
+We want to develop a flexible application prototype to support project managers and their teams with their risk management activities. The app should cover all four phases of the risk management process, it should be able to learn with the teams’ experiences and also should be engaging.
 We do not want to provide pre-defined risks or mitigations in the scope of this work. We also explicitly focus on project risk management, not on company risk management or IT security issues. 
 
 \subsection{Functionalities}
@@ -49,13 +49,13 @@ This project is being developed as a student research project and part of the au
 For the application to be usable on desktop and mobile device we use responsive design. We also aim for intuitive design using known symbols and functionalities to ensure user comfort. We adhere to design guidelines and we used a mock-up prototype to receive early user feedback.
 \paragraph*{Reliability}
 \label{sec:domainBcb}
-We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the repective company's control. Therefore in terms of reliabilty we aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state of the art technology such as React with Redux, Spring Boot and a Postgre \acs{SQL} database.
+We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the respective company's control. Therefor in terms of reliability aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state-of-the-art technology such as React with Redux, Spring Boot and a Postgre \acs{SQL} database.
 \paragraph*{Performance}
 \label{sec:domainBcc}
 To make our application fast and scalable we use RESTful apis. Our front end is designed as a single page application for faster in-app performance. For future development this also offers the option to develop offline functionalities. Our back end uses a container based approach using docker and docker compose.
 \paragraph*{Supportability}
 \label{sec:domainBcd}
-We use sonar to ensure code quality for future maintance and expandability. We work with contious integration, deployment and delivery to maintain program stability using appropiate unit and integration tests. Furthermore we do code reviews and follow the SOLID design principles.  
+We use sonar to ensure code quality for future maintenance and expandability. We work with continuous integration to maintain program stability using appropriate unit and integration tests. Furthermore, we do code reviews and follow the SOLID design principles.  
 
 \subsection{Design Constraints}
 \label{sec:domainBd}
