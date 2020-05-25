@@ -7,7 +7,7 @@
 
 \subsection{Purpose and Scope}
 \label{sec:domainBa}
-There are risk management tools on the market to support project managers in their risk management activities. Some tools have a similar focus to this work \cite{OperationalRiskManagement}, \cite{RiskManagementSoftware} others are oriented towards company risk management \cite{QHSERiskCompliance} whereas again others are project management tools with a risk management section \cite{https://www.ntaskmanager.com/}. Those programs contain similar features as discussed in \ref{sec:theoryAc} and \ref{sec:theoryAd}. They do not cover user engagement however. To prevent negligence in the course of project life we want to add gamification elements as discussed in \ref{sec:domainC} to incorporate not only process support but to also consider the human factor.
+There are risk management tools on the market to support project managers in their risk management activities. Some tools have a similar focus to this work \cite{OperationalRiskManagement}, \cite{RiskManagementSoftware} others are oriented towards company risk management \cite{QHSERiskCompliance} whereas others are project management tools with a risk management section \cite{https://www.ntaskmanager.com/}. Those programs contain similar features as discussed in \ref{sec:theoryAc} and \ref{sec:theoryAd}. They do not cover user engagement, however. To prevent negligence in the course of project life we want to add gamification elements as discussed in \ref{sec:domainC} to incorporate not only process support but to also consider the human factor.
 We want to develop a flexible application prototype to support project managers and their teams with their risk management activities. The app should cover all four phases of the risk management process, it should be able to learn with the teams’ experiences and also should be engaging.
 We do not want to provide pre-defined risks or mitigations in the scope of this work. We also explicitly focus on project risk management, not on company risk management or IT security issues. 
 
@@ -49,7 +49,7 @@ This project is being developed as a student research project and part of the au
 For the application to be usable on desktop and mobile device we use responsive design. We also aim for intuitive design using known symbols and functionalities to ensure user comfort. We adhere to design guidelines and we used a mock-up prototype to receive early user feedback.
 \paragraph*{Reliability}
 \label{sec:domainBcb}
-We do not intend to provide hosting for the software. As project health is sensitive information for a company so this data is best left under the respective company's control. Therefor in terms of reliability aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state-of-the-art technology such as React with Redux, Spring Boot and a Postgre \acs{SQL} database.
+We do not intend to provide hosting for the software. As project health is sensitive information for a company, so this data is best left under the respective company's control. Therefore, in terms of reliability aim to provide a stable software but have no further service level agreements. To ensure software stability we make use of state-of-the-art technology such as React with Redux, Spring Boot and a Postgre \acs{SQL} database.
 \paragraph*{Performance}
 \label{sec:domainBcc}
 To make our application fast and scalable we use RESTful apis. Our front end is designed as a single page application for faster in-app performance. For future development this also offers the option to develop offline functionalities. Our back end uses a container based approach using docker and docker compose.
@@ -59,14 +59,14 @@ We use sonar to ensure code quality for future maintenance and expandability. We
 
 \subsection{Design Constraints}
 \label{sec:domainBd}
-The software is designed as a web application so internet access will be required. As a  \acs{PWA} the application can support offline functionality however that will not be implemented within the scope of this project. Due to the chosen technology we also cannot guarantee all features to be available for every webbrowser, howver the application is designed to provide the core functionalities even without additional  \acs{PWA} features.
+The software is designed as a web application so internet access will be required. As a  \acs{PWA} the application can support offline functionality however, that will not be implemented within the scope of this project. Due to the chosen technology we also cannot guarantee all features to be available for every webbrowser, howver the application is designed to provide the core functionalities even without additional  \acs{PWA} features.
 
 \subsection{Interfaces}
 \label{sec:domainBe}
 
 \subsubsection{User Interfaces}
 \label{sec:domainBea}
-The application will start on the home screen. After registration and login the home screen will transform into the specific user's activity stream page which covers all recent events relevant to the user. The user can navigate to another screen, listing their projects. By selecting a project the project detail view is opened covering the risks for the respective project. The risk detail view incorporates risk responses.
+The application will start on the home screen. After registration and login, the home screen will transform into the specific user's activity stream page which covers all recent events relevant to the user. The user can navigate to another screen, listing their projects. By selecting a project the project detail view is opened covering the risks for the respective project. The risk detail view incorporates risk responses.
 When adding new risks users can open the risk pool to view all pool risks available to the company.
 \subsubsection{Further Interfaces}
 \label{sec:domainBeb}

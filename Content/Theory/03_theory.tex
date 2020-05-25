@@ -4,7 +4,7 @@
 \section{Progressive Web Apps}
 \label{sec:theorieC}
 
-Besides proper theoretical background about risk management and gamification, this chapters covers the needed technical knowledge to build a device independent application by giving an introduction to \acl{PWA}s, their characteristics (\ref{sec:theorieCa}), needed implementations (\ref{sec:theorieCb}, \ref{sec:theorieCc}) and current support (\ref{sec:theorieCd}). Having a device independent application is something potential users wished for (\ref{sec:DomainAa}). 
+Besides proper theoretical background about risk management and gamification, this chapter covers the necessary technical knowledge to build a device independent application by giving an introduction to \acl{PWA}s, their characteristics (\ref{sec:theorieCa}), implementations (\ref{sec:theorieCb}, \ref{sec:theorieCc}) and current support (\ref{sec:theorieCd}). Having a device independent application is something potential users wished for (\ref{sec:DomainAa}). 
 
 As of today, devices such as mobile phones and personal computers come with their own app store. Microsoft offers their own Store, Google their Play Store and Apple the App Store. Users often find themselvews worrying about an app they once saw running on another platform not being available for their platform (e.g. Apples iOS and Googles Android) \cite[p. 3]{sheppardBeginningProgressiveWeb2017}.
 
@@ -19,13 +19,13 @@ To transform an existing web app into a  \acs{PWA} or build one from scratch one
 While the following eight characteristics represent Mozilla’s (Firefox) ideas of a  \acs{PWA}, other web browser manufactures such as Microsoft (Edge) or Google (Chrome) have roughly the same idea about  \acs{PWA}s and describe eight or ten characteristics respectively within their developer documentations \cite[p. 90]{liebelProgressiveWebApps2019}, \cite{ProgressiveWebApps}.
 
 \begin{enumerate} 
-	\item  \textbf{Progressive}: The first characteristic defines that a  \acs{PWA} should not exclude the user from using the core functionality but extend the user experience by embracing new features implemented by the web browser manufactures \cite[p. 100]{liebelProgressiveWebApps2019}, \cite[p. 2]{hajianProgressiveWebApps2019}. For example, a web app to check mails should not exclude the user from checking their inbox or sending mails but could provide push notifications to inform about incoming mails. In this example the user is not excluded from using the core functionality of a mail app (checking the inbox and sending mails) and user experience is enhanced by push notifications. To avoid unexpected failures a developer should follow the Feature Detection principle which says an application should not blindly use a non-standardized feature before checking its existence \cite[p. 101]{liebelProgressiveWebApps2019}.
+	\item  \textbf{Progressive}: The first characteristic defines that a  \acs{PWA} should not exclude the user from using the core functionality, but extend the user experience by embracing new features implemented by the web browser manufactures \cite[p. 100]{liebelProgressiveWebApps2019}, \cite[p. 2]{hajianProgressiveWebApps2019}. For example, a web app to check mails should not exclude the user from checking their inbox or sending mails but could provide push notifications to inform about incoming mails. In this example, the user is not excluded from using the core functionality of a mail app (checking the inbox and sending mails) and user experience is enhanced by push notifications. To avoid unexpected failures a developer should follow the Feature Detection principle which says an application should not blindly use a non-standardized feature before checking its existence \cite[p. 101]{liebelProgressiveWebApps2019}.
 
-	\item \textbf{Network Independent}: Using a regular web app on the go can be a problem, especially in regions with little to no mobile reception or no stable Wi-Fi being around. Thus, the dynamic content of a web app does not load within a tolerable timeframe or a user is inhibited to perform actions like sending a mail \cite[p. 106]{liebelProgressiveWebApps2019}. On these grounds a technology called Service Worker has been established and implemented by many browser manufactures. In short, a service worker is a script that is able to listen to the network traffic caused by a  \acs{PWA} and therefore is able to cache possible answers fetched from a server and serve them to the web app when no stable network connection is available or do background syncing by running code even when the web app isn’t in use. For more information about the service worker see chapter \ref{sec:theorieCc} \cite[p. 43]{sheppardBeginningProgressiveWeb2017}.
+	\item \textbf{Network Independent}: Using a regular web app on the go can be a problem, especially in regions with little to no mobile reception or no stable Wi-Fi being around. Thus, the dynamic content of a web app does not load within a tolerable timeframe or a user is inhibited to perform actions like sending a mail \cite[p. 106]{liebelProgressiveWebApps2019}. On these grounds a technology called Service Worker has been established and implemented by many browser manufactures. In short, a service worker is a script that is able to listen to the network traffic caused by a  \acs{PWA} and is therefore able to cache possible answers fetched from a server and serve them to the web app when no stable network connection is available or do background syncing by running code even when the web app is not in use. For more information about the service worker see chapter \ref{sec:theorieCc} \cite[p. 43]{sheppardBeginningProgressiveWeb2017}.
 
 	\item \textbf{Safe}: As mentioned in the previous paragraph, service workers can run code independently from the  \acs{PWA}. To avoid harmful service workers from running malicious code, browser manufactures expect  \acs{PWA}s to be served by a trusted host over a secure connection. To be more precise, over an HTTPS connection \cite[p. 24]{sheppardBeginningProgressiveWeb2017}. HTTPS stands for Hypertext Transfer Protocol Secure and is based on TLS (Transport Layer Security). Once the host has obtained a digital certificate for its domain, this certificate is being transferred to the client where it can be verified by the web browser. On success an HTTPS connection can be established and every upcoming network traffic will be encrypted \cite[pp. 112-113]{liebelProgressiveWebApps2019}.
 
-	\item \textbf{Re-engageable}: A feature which native apps are using for a while now are push notifications. Push notifications are a common way to inform users about the newest events such as a new mail in the user’s inbox. Thanks to the Push API that is implemented on top of the service worker, just like native apps,  \acs{PWA}s can keep the users engaged by sending notifications as can be seen in figure \ref{fig:pwa_reengageable} \cite[p. 201]{hajianProgressiveWebApps2019}.
+	\item \textbf{Re-engageable}: A feature which native apps are using for a while now are push notifications. Push notifications are a common way to inform users about the newest events such as a new mail in the user’s inbox. Due to the Push API that is implemented on top of the service worker, just like native apps,  \acs{PWA}s can keep the users engaged by sending notifications as can be seen in figure \ref{fig:pwa_reengageable} \cite[p. 201]{hajianProgressiveWebApps2019}.
 
 \begin{figure}[htbp] 
 	\centering
@@ -34,7 +34,7 @@ While the following eight characteristics represent Mozilla’s (Firefox) ideas 
 	\label{fig:pwa_reengageable}
 \end{figure}
 
-	\item \textbf{Responsive}: This characteristic specifies that the  \acs{PWA} renders its user interface corresponding to the devices used to access it. This is necessary as the available space and input method can change from device to device. The screen of a phone on average is way smaller than the screen of a notebook. Furthermore, using fingers to interact with a phone is less precise than using a mouse on a notebook \cite[pp. 115-116]{liebelProgressiveWebApps2019}. In figure \ref{fig:pwa_responsive} for example one can see how the content and navigation arrange differently on each device. Due less space the navigation bar on the mobile version (extract on the right side) is completely collapsed and can be accessed by clicking the so-called burger-like icon while on the desktop version the whole navigation bar is visible.
+	\item \textbf{Responsive}: This characteristic specifies that the  \acs{PWA} renders its user interface corresponding to the devices used to access it. This is necessary as the available space and input method can change from device to device. The screen of a phone on average is way smaller than the screen of a notebook. Furthermore, using fingers to interact with a phone is less precise than using a mouse on a notebook \cite[pp. 115-116]{liebelProgressiveWebApps2019}. In figure \ref{fig:pwa_responsive} for example one can see how the content and navigation arrange differently on each device. Due to limited space in the navigation bar on the mobile version (extract on the right side) is completely collapsed and can be accessed by clicking the so-called burger-like icon while on the desktop version the whole navigation bar is visible.
 
 \begin{figure}[htbp] 
 	\centering
@@ -85,7 +85,7 @@ A service worker is a script written in JavaScript, running in the context of th
 
 After being registered by the web browser, which means that a HTTPS connection is established and it has been requested by the  \acs{PWA}s source code, it has full control to all in- and outgoing network traffic, hence the trait of a controller. Interceptor means that the service worker can manipulate and inspect the network traffic and proxy as the service worker is able to decide if the outgoing traffic should be redirected to the requested resource or completely avoid any outgoing traffic by answering with data it stored in a cache previously. The latter is the exact reason why a service worker is indispensable for the Network Independent characteristic (chapter \ref{sec:theorieCb}, p. \pageref{sec:theorieCb}) of a  \acs{PWA} \cite[p. 176-177]{liebelProgressiveWebApps2019}.
 
-The upcoming listing demonstrates how a service worker can manipulate and proxy outgoing network traffic. Before, lets assume that a cache called \texttt{pwa-demo} was already created by the service worker.
+The upcoming listing demonstrates how a service worker can manipulate and proxy outgoing network traffic. Before, let us assume that a cache called \texttt{pwa-demo} was already created by the service worker.
 
 \begin{center}
 	\begin{minipage}{\textwidth}
@@ -106,9 +106,9 @@ This strategy is called Cache First as the service worker will look up the cache
 \label{sec:theorieCd}
 
 
-As with every specification introduced, it takes some time for every manufacturer to fully implement it in their products. In this chapter a short overview is given over which feautures web browsers currently support in terms of  \acs{PWA}s. The following figures are taken from www.CanIUse.com (17/10/2019). They show to which grade a web browser version supports a given specification. Red means no support, dark green fully supported and light green supported to a degree.
+As with every specification introduced, it takes some time for every manufacturer to fully implement it in their products. In this chapter, a short overview is given over which feautures web browsers currently support in terms of  \acs{PWA}s. The following figures are taken from www.CanIUse.com (17/10/2019). They show to which grade a web browser version supports a given specification. Red means no support, dark green fully supported and light green supported to a degree.
 
-In figure \ref{fig:pwacompatibilitywebmanifest} one can see the web browser compatibility of the web manifest for richer offline experiences - like being installable.
+Figure \ref{fig:pwacompatibilitywebmanifest} depicts the web browser compatibility of the web manifest for richer offline experiences - like being installable.
 
 \begin{figure}[htbp] 
 	\centering
@@ -129,7 +129,7 @@ Figure \ref{fig:pwacompatibilityserviceworker} shows the web browsers support fo
 	\label{fig:pwacompatibilityserviceworker}
 \end{figure}
 
-If the  \acs{PWA} should use push notifications to inform its users about new occurrences and fulfill the re-engageable characteristic (see chapter \ref{sec:theorieCa}) it can use the Push API which is another specification that needs to be implemented by the web browsers manufacturer.
+If the \acs{PWA} should use push notifications to inform its users about new occurrences and fulfill the re-engageable characteristic (see chapter \ref{sec:theorieCa}) it can use the Push API which is another specification that needs to be implemented by the web browsers manufacturer.
 
 \begin{figure}[htbp] 
 	\centering
@@ -140,4 +140,4 @@ If the  \acs{PWA} should use push notifications to inform its users about new oc
 
 As seen in figure \ref{fig:pwacompatibilitypushapi}, most manufactures have implemented this feature, Apple falls behind with their desktop and mobile web browser Safari as well as Microsoft’s Internet Explorer.
 
-Thinking back on the first characteristic of a  \acs{PWA}, being progressive, a non-supported feature (e.g. the web manifest in Mozilla's Firefox) won’t lock the user out of the app as all these specifications should only enhance the user experience and not lock the user out from using the core functionality of a web app.
+Thinking back on the first characteristic of a \acs{PWA} being progressive, a non-supported feature (e.g. the web manifest in Mozilla's Firefox) will not lock the user out of the app as all these specifications should only enhance the user experience and not lock the user out from using the core functionality of a web app.

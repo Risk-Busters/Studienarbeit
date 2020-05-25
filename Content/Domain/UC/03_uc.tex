@@ -19,18 +19,18 @@ A risk consists of the following fields:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item name (String)
-	\item description (String)
+	\item Name (String)
+	\item Description (String)
 \end{itemize}
 Following fields are filled later and are not part of the input form:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item probability of occurrence (Enum)
-	\item impact (Enum)
-	\item response (Object)  
-	\item person in charge (User)
-	\item public risk (boolean)
+	\item Probability of occurrence (Enum)
+	\item Impact (Enum)
+	\item Response (Object)  
+	\item Person in charge (User)
+	\item Public risk (boolean)
 \end{itemize}
 
 \paragraph*{Basic Flow} \mbox{}\\
@@ -39,7 +39,7 @@ Creating a risk:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item  When the user clicks the "+" button at the project detail page.
+	\item When the user clicks the "+" button at the project detail page.
 	\item Then the screen for adding a new risk is opened.
 	\item When the risk form is filled by the user.
 	\item And the user clicks on the "Propose risk" button.
@@ -99,7 +99,7 @@ The postconditions for this use case are:
 The persistence guidelines are: 
 \newline
 \noindent
-The risk form was completely or partly filled by the user. When the user tries to leave the page now, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
+The risk form was completely or partly filled by the user. When the user tries to leave the page, there should be a prompt for exiting. When the risk form is filled out and the button "Propose risk" is clicked a POST request syncs the status with the server.
 
 \subparagraph{Activity Diagram}\mbox{}\\
 \begin{figure}[H]

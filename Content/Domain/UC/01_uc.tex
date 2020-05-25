@@ -20,8 +20,8 @@ These fields are required for the user account creation:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item e-mail address (String)
-	\item password (String)
+	\item E-mail address (String)
+	\item Password (String)
 \end{itemize}
 Additionaly, the user can set the following field while updating their account:
 \begin{itemize}
@@ -39,7 +39,7 @@ New Account:
 	
 	\item The visitor clicks the "register" button and fills in the fields mentioned in the brief description.
 	\item Then clicks on the "register" button below the form to send the input to the server.
-	\item If the visitors input fulfils the criteria of a username, email and password the account is created on the server and a conformation e-mail is send to the given address.
+	\item If the visitors input fulfils the criteria of a username, e-mail and password the account is created on the server and a conformation e-mail is send to the given address.
 \end{itemize}
 The account itself can only be used after having clicked on the link provided in the conformation e-mail.
 
@@ -95,17 +95,17 @@ Invalid input:
 	\item The user / visitor fills in the required fields (username, e-mail, password, language).
 	\item If one field does not meet its criteria (e.g. an e-mail should contain the @-sign), which is validated by the server after submitting the input, the user / visitor will be informed next to the corresponding input fields.
 \end{itemize} 
-In this case the user account won't be created nor updated.
+In this case the user account will not be created nor updated.
 
 \noindent
 Invalid user credentials:
 \begin{itemize}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item If a visitor wants to log into an existing user account or if they attempt to delete an account, the user account's credentials have to be submitted (e-mail and password for login, password only for deletion).
+	\item If a visitor wants to log into an existing user account or if they attempt to delete an account, the user accounts' credentials have to be submitted (e-mail and password for login, password only for deletion).
 	\item If the account credentials do not match any entry on the server, the user / visitor will be informed next to the input fields.
 \end{itemize}
-In this flow the visitor won't be logged in and neither will the account be deleted.
+In this flow the visitor will not be logged in and neither will the account be deleted.
 
 \paragraph*{Special Requirements and Preconditions}\mbox{}\\
 Different flows require different preconditions.
@@ -122,8 +122,8 @@ Mentionable postconditions are:
 \begin{enumerate}
 	\vspace{-3mm}
 	\setlength\itemsep{-1em}
-	\item After deleting an account, the account cannot be restored and therefore not be used anymore.
-	\item Furthermore logging in allows a user to then access user related content from the server and logging out hides all user related content respectively.
+	\item After deleting an account, the account cannot be restored and, therefore, not be used anymore.
+	\item Furthermore, logging in allows a user to then access user related content from the server and logging out hides all user related content respectively.
 \end{enumerate}
 
 \noindent
